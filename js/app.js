@@ -5,6 +5,9 @@ import { createStore } from './store.js';
 import { startRouter } from './router.js';
 import { nextStreak } from './progress.js';
 import { dateKey } from './util.js';
+import { createTTS, buildConceptScript } from './tts.js';
+import { createPlayer } from './components/player.js';
+import { byId } from './data/lookup.js';
 import { renderHome } from './views/home.js';
 import { renderLibrary } from './views/library.js';
 import { renderConcept } from './views/concept.js';
@@ -12,6 +15,15 @@ import { renderTools } from './views/tools.js';
 import { renderSaved } from './views/saved.js';
 
 const store = createStore(window.localStorage);
+const tts = createTTS(store);
+
+// Persistent player (keeps playing across view changes).
+document.body.append(createPlayer(tts, store));
+// Follow-along: when a playlist advances to a new concept, navigate to it.
+tts.setOnAdvance((conceptId) => {
+  const target = `#/concept/${conceptId}`;
+  if (window.location.hash !== target) window.location.hash = target;
+});
 
 const view = document.getElementById('view');
 const backBtn = document.getElementById('backBtn');
@@ -46,7 +58,7 @@ function render(route) {
   const fn = VIEWS[route.name] || renderHome;
   let node;
   try {
-    node = fn({ store, param: route.param });
+    node = fn({ store, tts, param: route.param });
   } catch (err) {
     console.error('View render failed:', err);
     node = document.createElement('section');
@@ -66,6 +78,18 @@ function render(route) {
 }
 
 startRouter(render);
+
+// Shareable deep link: ?play=<conceptId> opens that concept and starts read-aloud.
+const playId = new URLSearchParams(window.location.search).get('play');
+if (playId) {
+  const hit = byId(playId);
+  if (hit) {
+    const target = `#/concept/${hit.concept.id}`;
+    if (window.location.hash !== target) window.location.hash = target;
+    tts.play([{ conceptId: hit.concept.id, title: hit.concept.title,
+      segments: buildConceptScript(hit.concept) }]);
+  }
+}
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

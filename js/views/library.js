@@ -1,8 +1,9 @@
 import { el } from '../util.js';
 import { BOOKS } from '../data/content.js';
 import { renderConceptListItem } from '../components/card.js';
+import { buildConceptScript } from '../tts.js';
 
-export function renderLibrary({ store }) {
+export function renderLibrary({ store, tts }) {
   let query = '';
   let filter = 'all';
 
@@ -19,6 +20,22 @@ export function renderLibrary({ store }) {
   };
 
   const body = el('div', { class: 'lib-body' });
+
+  const visibleConcepts = () => {
+    const out = [];
+    for (const book of BOOKS)
+      for (const mod of book.modules)
+        for (const c of mod.concepts) if (matches(c)) out.push(c);
+    return out;
+  };
+
+  const playAllBtn = (tts && tts.supported)
+    ? el('button', { class: 'listen-btn playall', onclick: () => {
+        const items = visibleConcepts().map(c =>
+          ({ conceptId: c.id, title: c.title, segments: buildConceptScript(c) }));
+        if (items.length) tts.play(items);
+      } }, el('span', { class: 'listen-ico', 'aria-hidden': 'true' }, '▶'), 'Listen to all')
+    : null;
 
   function paint() {
     body.replaceChildren();
@@ -39,6 +56,10 @@ export function renderLibrary({ store }) {
       }
     }
     if (!shown) body.append(el('p', { class: 'empty' }, 'No concepts match your search.'));
+    if (playAllBtn) {
+      playAllBtn.lastChild.textContent = shown ? `Listen to all ${shown}` : 'Nothing to play';
+      playAllBtn.disabled = !shown;
+    }
   }
 
   const search = el('input', {
@@ -62,7 +83,7 @@ export function renderLibrary({ store }) {
     chips.append(chip);
   }
 
-  const root = el('section', { class: 'library' }, search, chips, body);
+  const root = el('section', { class: 'library' }, search, chips, playAllBtn, body);
   paint();
   return root;
 }

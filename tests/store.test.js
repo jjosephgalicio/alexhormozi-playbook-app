@@ -63,6 +63,15 @@ test('builder drafts save (update) and delete', () => {
   assert.equal(s.get().builders.offer.length, 0);
 });
 
+test('setAudio merges and persists voice + rate', () => {
+  const s = createStore(memoryBackend());
+  assert.deepEqual(s.get().audio, { voiceURI: null, rate: 1 });
+  s.setAudio({ rate: 1.3 });
+  assert.equal(s.get().audio.rate, 1.3);
+  s.setAudio({ voiceURI: 'Samantha' });
+  assert.deepEqual(s.get().audio, { voiceURI: 'Samantha', rate: 1.3 });
+});
+
 test('subscribe fires on change and can unsubscribe', () => {
   const s = createStore(memoryBackend());
   let n = 0;

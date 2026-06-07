@@ -11,6 +11,7 @@ const DEFAULTS = {
   checklists: {},      // { [conceptId]: [bool] }
   streak: { count: 0, lastActiveDate: null },
   theme: 'light',      // 'light' | 'dark'
+  audio: { voiceURI: null, rate: 1 },  // read-aloud preferences
   builders: { offer: [], moneyModel: [] },
 };
 
@@ -55,6 +56,8 @@ export function createStore(backend) {
     },
 
     setStreak(streak) { state.streak = streak; commit(); },
+
+    setAudio(patch) { state.audio = { ...state.audio, ...patch }; commit(); },
 
     saveBuilderDraft(kind, draft) {
       const list = state.builders[kind];
