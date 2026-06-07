@@ -1,0 +1,16 @@
+{
+  "name": "The Playbook — Hormozi Offers & Money Models",
+  "short_name": "The Playbook",
+  "description": "An action-first, fully-offline playbook from Alex Hormozi's $100M Offers & $100M Money Models.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FAF5EA",
+  "theme_color": "#0E5A3E",
+  "categories": ["education", "business", "productivity"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
