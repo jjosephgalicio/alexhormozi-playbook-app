@@ -29,6 +29,7 @@ const ASSETS = [
   './js/components/card.js',
   './js/components/cover.js',
   './js/components/icons.js',
+  './js/components/diagram.js',
   './js/components/player.js',
   './js/views/home.js',
   './js/views/library.js',

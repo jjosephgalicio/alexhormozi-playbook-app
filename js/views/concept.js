@@ -3,6 +3,7 @@ import { byId } from '../data/lookup.js';
 import { renderChecklist } from '../components/card.js';
 import { coverSVG } from '../components/cover.js';
 import { iconFor, icon } from '../components/icons.js';
+import { diagramSVG } from '../components/diagram.js';
 import { nextStreak } from '../progress.js';
 import { buildConceptScript } from '../tts.js';
 
@@ -115,10 +116,19 @@ export function renderConcept({ store, tts, param }) {
 
   const hook = el('blockquote', { class: 'hook', 'data-seg': 0 }, c.hook);
 
+  // visual "how it works" mechanic diagram (not part of the read-aloud script)
+  const diagram = diagramSVG(c.id);
+  const diagramSec = diagram
+    ? el('div', { class: 'c-sec' },
+        el('div', { class: 'c-sec-label' }, 'How it works'),
+        svgHost('diagram', diagram))
+    : null;
+
   const root = el('section', { class: 'concept' },
     hero,
     hook,
     listenBtn,
+    diagramSec,
     section('The principle', c.principle, 1),
     section('Why it works', c.why, 2),
     coachNote,

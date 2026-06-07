@@ -318,6 +318,27 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
   padding: 1px 7px; margin-right: 3px; white-space: nowrap; }
 .kind-badge.app { color: var(--gold); background: var(--gold-soft);
   border-color: color-mix(in srgb, var(--gold) 35%, transparent); }
+
+/* mechanic diagrams (theme-aware via classes) */
+.diagram { padding: 14px 14px 10px; background: var(--paper-2); border: 1px solid var(--line);
+  border-radius: var(--radius-s); box-shadow: var(--shadow-1); }
+.diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
+.diagram text { font-family: var(--sans); fill: var(--ink); font-size: 12px; font-weight: 600; }
+.diagram text.s { font-size: 10.5px; fill: var(--muted); }
+.diagram text.sa { font-size: 10.5px; fill: var(--accent); font-weight: 700; }
+.diagram text.big { font-size: 16px; }
+.diagram .dgbox { fill: var(--paper-2); stroke: var(--line-2); stroke-width: 1.5; }
+.diagram .dgbox.a { fill: var(--accent-soft); stroke: var(--accent); }
+.diagram .dgbox.g { fill: var(--gold-soft); stroke: var(--gold); }
+.diagram .bar { fill: var(--line-2); }
+.diagram .bar.a { fill: var(--accent); }
+.diagram .bar.g { fill: var(--gold); }
+.diagram .stroke { fill: none; stroke: var(--muted); stroke-width: 1.8; stroke-linecap: round; }
+.diagram .stroke.a { stroke: var(--accent); }
+.diagram .stroke.g { stroke: var(--gold); }
+.diagram .af { fill: var(--accent); }
+.diagram .gf { fill: var(--gold); }
+.diagram .mf { fill: var(--line-2); }
 @media (min-width: 560px) { .ex-grid { grid-template-columns: 1fr 1fr; } }
 
 /* coach's note callout */
