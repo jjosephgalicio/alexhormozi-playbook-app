@@ -152,6 +152,20 @@ export function renderConcept({ store, tts, param }) {
       : null,
     el('div', { class: 'c-actions' }, learnedBtn, bookmarkBtn));
 
+  // reveal the diagram with a subtle animation when it scrolls into view
+  if (diagramSec) {
+    const host = diagramSec.querySelector('.diagram');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some(e => e.isIntersecting)) { host.classList.add('in'); io.disconnect(); }
+      }, { threshold: 0.2 });
+      requestAnimationFrame(() => io.observe(host));
+      setTimeout(() => { host.classList.add('in'); io.disconnect(); }, 1600); // safety
+    } else {
+      host.classList.add('in');
+    }
+  }
+
   // live highlight of the section being read aloud
   if (tts && tts.supported) {
     let lastSeg = -1;

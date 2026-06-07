@@ -339,6 +339,19 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 .diagram .af { fill: var(--accent); }
 .diagram .gf { fill: var(--gold); }
 .diagram .mf { fill: var(--line-2); }
+
+/* subtle scroll-in reveal (only when motion is welcome; static otherwise) */
+@media (prefers-reduced-motion: no-preference) {
+  .diagram svg { opacity: 0; transform: translateY(10px);
+    transition: opacity .5s ease, transform .55s cubic-bezier(.2,.7,.2,1); }
+  .diagram.in svg { opacity: 1; transform: none; }
+  .diagram .bar { transform-box: fill-box; transform-origin: bottom; transform: scaleY(.05);
+    transition: transform .6s cubic-bezier(.2,.7,.2,1) .12s; }
+  .diagram.in .bar { transform: scaleY(1); }
+  .diagram .dgbox.a { transform-box: fill-box; transform-origin: center; opacity: .5; transform: scale(.92);
+    transition: transform .5s cubic-bezier(.2,.7,.2,1) .2s, opacity .45s ease .2s; }
+  .diagram.in .dgbox.a { opacity: 1; transform: none; }
+}
 @media (min-width: 560px) { .ex-grid { grid-template-columns: 1fr 1fr; } }
 
 /* coach's note callout */
