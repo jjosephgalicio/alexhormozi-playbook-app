@@ -47,6 +47,19 @@ test('every concept has rich examples and actions', () => {
   }
 });
 
+test('every concept has research enrichment (coachNote, mistakes, stats, cases)', () => {
+  for (const c of concepts) {
+    assert.ok(typeof c.coachNote === 'string' && c.coachNote.trim().length > 0,
+      `${c.id}.coachNote empty`);
+    for (const field of ['mistakes', 'stats', 'cases']) {
+      assert.ok(Array.isArray(c[field]) && c[field].length >= 2,
+        `${c.id}.${field} needs >=2 entries, has ${c[field]?.length}`);
+      assert.ok(c[field].every(e => typeof e === 'string' && e.trim()),
+        `${c.id}.${field} has an empty entry`);
+    }
+  }
+});
+
 test('every related id resolves to a real concept', () => {
   const set = new Set(ids);
   for (const c of concepts)

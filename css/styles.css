@@ -308,6 +308,35 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 .ex-text { padding-top: 2px; }
 @media (min-width: 560px) { .ex-grid { grid-template-columns: 1fr 1fr; } }
 
+/* coach's note callout */
+.callout {
+  position: relative; margin: 0 0 20px; padding: 16px 18px 16px 18px;
+  background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
+  border-left: 4px solid var(--accent); border-radius: 0 var(--radius-s) var(--radius-s) 0;
+}
+.callout-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.callout p { margin: 0; color: var(--ink-2); font-family: var(--serif); font-style: italic;
+  font-size: 1.04rem; line-height: 1.5; }
+
+/* marked lists: common mistakes + by the numbers */
+.mistake-list, .stat-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.mistake-list li, .stat-list li {
+  display: flex; gap: 11px; align-items: flex-start;
+  font-size: 0.94rem; color: var(--ink-2); line-height: 1.45;
+}
+.mistake-list .marker, .stat-list .marker {
+  flex: 0 0 auto; width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center;
+  font-size: 0.72rem; font-weight: 700; margin-top: 1px;
+}
+.mistake-list .marker { color: #b0431f; background: #b0431f1a;
+  border: 1px solid #b0431f33; }
+[data-theme="dark"] .mistake-list .marker { color: #e8916b; background: #e8916b1f; border-color: #e8916b33; }
+.stat-list .marker { color: var(--gold); background: var(--gold-soft);
+  border: 1px solid color-mix(in srgb, var(--gold) 30%, transparent); }
+.stat-list li { background: var(--paper-2); border: 1px solid var(--line);
+  border-radius: var(--radius-s); padding: 11px 13px; box-shadow: var(--shadow-1); }
+
 /* action checklist */
 .check { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .check li { display: flex; gap: 12px; align-items: flex-start; padding: 11px 4px;

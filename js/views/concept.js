@@ -29,13 +29,38 @@ export function renderConcept({ store, param }) {
       el('h1', { class: 'c-hero-title' }, c.title)));
 
   // examples as visual cards (icon cue per industry)
-  const examples = el('div', { class: 'c-sec' },
-    el('div', { class: 'c-sec-label' }, 'More real-world examples'),
+  const visualCards = (items) =>
     el('div', { class: 'ex-grid' },
-      ...c.examples.map(x =>
+      ...items.map(x =>
         el('div', { class: 'ex-card' },
           svgHost('ex-ico', iconFor(x)),
-          el('div', { class: 'ex-text' }, x)))));
+          el('div', { class: 'ex-text' }, x))));
+
+  const examples = el('div', { class: 'c-sec' },
+    el('div', { class: 'c-sec-label' }, 'More real-world examples'),
+    visualCards(c.examples));
+
+  // coach's note callout
+  const coachNote = el('div', { class: 'callout' },
+    el('div', { class: 'callout-label' }, '✍ Coach’s note'),
+    el('p', {}, c.coachNote));
+
+  // case studies (visual cards too, for visual learners)
+  const cases = el('div', { class: 'c-sec' },
+    el('div', { class: 'c-sec-label' }, 'Case studies'),
+    visualCards(c.cases));
+
+  // marked lists (mistakes / stats)
+  const markedList = (label, items, listCls, marker) =>
+    el('div', { class: 'c-sec' },
+      el('div', { class: 'c-sec-label' }, label),
+      el('ul', { class: listCls },
+        ...items.map(t => el('li', {},
+          el('span', { class: 'marker' }, marker),
+          el('span', {}, t)))));
+
+  const mistakes = markedList('Common mistakes', c.mistakes, 'mistake-list', '✕');
+  const stats = markedList('By the numbers', c.stats, 'stat-list', '◆');
 
   // checklist
   const checked = store.get().checklists[c.id] || [];
@@ -80,9 +105,13 @@ export function renderConcept({ store, param }) {
     el('blockquote', { class: 'hook' }, c.hook),
     section('The principle', c.principle),
     section('Why it works', c.why),
+    coachNote,
     section('Story', c.story, 'story'),
     section('Apply it', c.apply),
     examples,
+    cases,
+    mistakes,
+    stats,
     el('div', { class: 'c-sec' },
       el('div', { class: 'c-sec-label' }, 'Action checklist'),
       checklist),

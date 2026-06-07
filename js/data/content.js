@@ -28,6 +28,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'differentiate',
+            coachNote:
+              `Commoditization is a slow death by a thousand discounts. Your job isn't to be cheaper — it's to be the only logical choice for one specific person. Pick a unique mechanism (a named method, a guarantee, a delivery format) competitors can't claim, and the price conversation quietly disappears.`,
+            mistakes: [
+              `Adding a "unique" twist the customer can't actually feel or value — differentiation only counts if the buyer perceives it.`,
+              `Differentiating on features rivals can copy overnight instead of on outcome, guarantee, or brand.`,
+              `Dropping price "just to get started," which trains the market to treat you as a commodity.`,
+            ],
+            stats: [
+              `In a Caltech/Stanford study (Plassmann et al., 2008), people rated the same wine as tastier when told it cost more — price itself shifts perceived quality.`,
+              `Commodity markets compete on price, compressing margins toward zero; "category-of-one" offers escape that race (the core thesis of $100M Offers).`,
+            ],
+            cases: [
+              `Liquid Death sells ordinary canned water at a premium by differentiating on brand and identity, not the water.`,
+              `Dollar Shave Club cracked a Gillette-dominated market not with a better blade but a differentiated model (subscription + voice) — and sold for ~$1B.`,
+            ],
             title: 'Differentiate — never compete on price',
             hook: 'If your product looks like everyone else’s, you’re forced to sell it cheaper — a race to the bottom.',
             principle:
@@ -61,6 +76,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'market-pain',
+            coachNote:
+              `Demand follows pain, not features. Before crafting the offer, get obsessive about the exact, present-tense problem — the words your customer says at 2 a.m. The more precisely you describe their pain back to them, the more they assume you can solve it.`,
+            mistakes: [
+              `Selling a "vitamin" (nice-to-have) and wondering why it's a slow, hard sell.`,
+              `Describing your solution instead of their problem — people buy when they feel understood, not informed.`,
+              `Targeting people who have the problem but don't yet feel it urgently.`,
+            ],
+            stats: [
+              `Loss aversion (Kahneman & Tversky, 1979): a loss feels about twice as intense as an equivalent gain — relieving pain motivates harder than promising upside.`,
+              `"Painkiller vs. vitamin" is a standard product/venture heuristic for why urgent-problem businesses convert faster and retain better.`,
+            ],
+            cases: [
+              `Analgesics like Advil built huge brands on acute, immediate relief, while many "wellness" supplements struggle to retain customers.`,
+              `24/7 locksmiths, tow trucks, and emergency plumbers command premium prices precisely because the pain is acute and now.`,
+            ],
             title: 'Look for pain — sell painkillers, not vitamins',
             hook: 'People pay now for what hurts now. Vitamins are optional; painkillers are urgent.',
             principle:
@@ -86,6 +116,21 @@ export const BOOKS = [
           },
           {
             id: 'market-purchasing-power',
+            coachNote:
+              `Willingness to pay is part of the market, not an afterthought. The same effort sells far better to people who already spend on the problem. Follow the existing budgets — find who's already paying to solve this, and sell them a better way.`,
+            mistakes: [
+              `Falling in love with a big audience that can't afford the price you need.`,
+              `Confusing audience size with revenue potential — reach without budget is vanity.`,
+              `Pricing for the broke majority instead of the able-to-pay minority.`,
+            ],
+            stats: [
+              `Hormozi's own example: a ~$300 course got 107 sales from a 150k-subscriber channel and zero from a 1.1M-subscriber channel that lacked purchasing power.`,
+              `The Pareto principle shows up in pricing: a small share of "whale" customers often drives most of the revenue.`,
+            ],
+            cases: [
+              `B2B software routinely out-earns consumer apps with a fraction of the users, because businesses have budgets and ROI to justify high prices.`,
+              `Luxury brands deliberately shrink their addressable market to those who can pay — and profit more per customer.`,
+            ],
             title: 'Look for purchasing power',
             hook: 'A huge audience is worthless if they can’t afford you.',
             principle:
@@ -111,6 +156,21 @@ export const BOOKS = [
           },
           {
             id: 'market-targetable',
+            coachNote:
+              `Reachability is a growth multiplier hiding in plain sight. If your buyers already cluster somewhere — a subreddit, an association, a hashtag, a trade show — your acquisition cost plummets. Choose markets you can reach repeatedly and cheaply, not just ones that exist.`,
+            mistakes: [
+              `Picking a "great" market you have no affordable way to reach.`,
+              `Spraying broad ads instead of going where buyers already gather.`,
+              `Ignoring owned channels (lists, communities) in favor of rented attention.`,
+            ],
+            stats: [
+              `Customer Acquisition Cost falls sharply when a market is concentrated and reachable — targeting is a primary lever on unit economics.`,
+              `Niche communities give near-zero-cost repeat access to the exact buyer, versus paying per impression on open platforms.`,
+            ],
+            cases: [
+              `Many B2B companies grow almost entirely through industry associations, trade shows, and niche newsletters, because the buyers are pre-aggregated.`,
+              `Creators who build an email list own a reachable audience and escape algorithm and ad-cost volatility.`,
+            ],
             title: 'Look for a market that’s easy to target',
             hook: 'If you can’t find them, you can’t sell to them.',
             principle:
@@ -136,6 +196,21 @@ export const BOOKS = [
           },
           {
             id: 'market-growing',
+            coachNote:
+              `A rising market forgives mistakes; a shrinking one punishes excellence. Tailwinds compound. Anchor your business in health, wealth, or relationships, then find the fastest-growing sub-niche inside it.`,
+            mistakes: [
+              `Building in a structurally declining category and blaming yourself for the headwind.`,
+              `Chasing a short-lived fad spike instead of a durable growth trend.`,
+              `Ignoring demographic shifts that quietly grow (or shrink) your market.`,
+            ],
+            stats: [
+              `The three evergreen markets — health, wealth, relationships — persist because the pain of lacking them is severe and universal.`,
+              `The subscription economy has grown several times faster than S&P 500 sales over the past decade (Zuora Subscription Economy Index) — riding a growing model pays.`,
+            ],
+            cases: [
+              `Businesses built on YouTube and creator tools rode a growth wave; print-classifieds businesses (newspapers) shrank with theirs.`,
+              `Senior-focused services keep expanding as populations age — in many countries more people turn 60 than 20.`,
+            ],
             title: 'Find a market that’s growing',
             hook: 'Row with the current. In a growing market you grow; in a dying one you shrink — no matter how good you are.',
             principle:
@@ -161,6 +236,21 @@ export const BOOKS = [
           },
           {
             id: 'pick-a-niche',
+            coachNote:
+              `Specialization is the fastest path to premium pricing. "For everyone" reads as "for no one." When the prospect thinks "this is literally me," price sensitivity drops and trust spikes. Commit long enough to master the niche before judging it.`,
+            mistakes: [
+              `Niche-hopping when the real problem is a weak offer, not the niche.`,
+              `Staying broad out of fear of "leaving money on the table" — and converting no one.`,
+              `Picking a niche with pain but no purchasing power or way to reach it.`,
+            ],
+            stats: [
+              `"The riches are in the niches" names a real effect: narrower targeting raises message-to-market match and conversion.`,
+              `The long-tail dynamic means specialized offers face far less competition and can hold higher margins than generic ones.`,
+            ],
+            cases: [
+              `Hormozi's example: "time management" → "for night-shift nurses" turns a crowded category into a near-monopoly for that buyer.`,
+              `Many 7-figure agencies serve one vertical (e.g., "Google Ads for dentists") and out-earn generalist shops.`,
+            ],
             title: 'Commit to a niche',
             hook: 'If you sell to everybody, you sell to nobody.',
             principle:
@@ -193,6 +283,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'price-vs-value',
+            coachNote:
+              `A price is never expensive or cheap in a vacuum — only relative to the value the buyer can see. Make the return obvious before you ever name the number. Sell the destination, and the ticket price stops mattering.`,
+            mistakes: [
+              `Leading with price before establishing value — guaranteeing a "too expensive" reaction.`,
+              `Talking features instead of the dollar, time, and emotional payoff.`,
+              `Assuming the customer will do the ROI math themselves (they won't).`,
+            ],
+            stats: [
+              `Value-based pricing (set by perceived value, not cost-plus) consistently beats cost-based pricing on margin in pricing research.`,
+              `Framing the same number against a bigger payoff flips the decision — Hormozi's $5k course becomes a "yes" reframed as guaranteed $7k/month.`,
+            ],
+            cases: [
+              `LASIK sells by reframing its price against a lifetime of glasses, contacts, and hassle.`,
+              `Solar installers close by reframing a large upfront cost as locking in 25 years of energy prices.`,
+            ],
             title: 'Price vs. value',
             hook: 'People don’t reject your price — they reject the value they can’t see yet.',
             principle:
@@ -218,6 +323,22 @@ export const BOOKS = [
           },
           {
             id: 'charge-premium',
+            coachNote:
+              `Price isn't just what you collect — it's a tool that shapes behavior. A higher price raises client commitment (so they show up and get results) and funds a better product (which creates a flywheel). Charging more and over-delivering is often kinder than charging little and under-serving.`,
+            mistakes: [
+              `Underpricing to feel "accessible," then lacking the margin to deliver real results.`,
+              `Competing on price against bigger players instead of on value.`,
+              `Raising price without raising the perceived value to match.`,
+            ],
+            stats: [
+              `The price-quality heuristic (Plassmann et al., 2008): a higher price literally increased neural pleasure and rated enjoyment of identical wine.`,
+              `Veblen goods break the normal demand curve — for status products, a higher price can increase demand.`,
+              `Higher financial commitment is linked to higher follow-through (sunk-cost and consistency effects), which improves client outcomes.`,
+            ],
+            cases: [
+              `Premium gyms whose members pay more attend more and get better results than $10/month gyms, where most never show up.`,
+              `Apple sustains industry-leading margins by pricing on perceived value and brand, then reinvesting in product.`,
+            ],
             title: 'Charge premium prices',
             hook: 'Charge so much it almost hurts — then over-deliver.',
             principle:
@@ -243,6 +364,21 @@ export const BOOKS = [
           },
           {
             id: 'four-value-drivers',
+            coachNote:
+              `Value is a fraction you can engineer: raise the dream outcome and the perceived likelihood, lower the time and the effort. Most competitors only promise a bigger dream — the durable edge is cutting time-to-result and effort, because those are hardest to copy and what people pay a premium to escape.`,
+            mistakes: [
+              `Cranking up the promise while ignoring believability — which reads as hype.`,
+              `Forgetting to attack time delay and effort, where the real willingness-to-pay lives.`,
+              `Offering no proof, so perceived likelihood stays low no matter how good the offer.`,
+            ],
+            stats: [
+              `People pay big premiums for speed: express shipping, rideshare vs. walking, and Amazon's delivery investment all monetize lower time delay.`,
+              `Guarantees and social proof raise "perceived likelihood of achievement," a documented driver of conversion through risk reduction.`,
+            ],
+            cases: [
+              `Amazon Prime turned lower time delay (fast, free shipping) into one of the stickiest subscriptions ever.`,
+              `HelloFresh and other meal kits win on effort reduction — pre-portioned, delivered, 20-minute recipes — not cheaper food.`,
+            ],
             title: 'The four value drivers',
             hook: 'Value = (Dream Outcome × Likelihood) ÷ (Time × Effort). Push two up, two down.',
             principle:
@@ -269,6 +405,21 @@ export const BOOKS = [
           },
           {
             id: 'psychological-solutions',
+            coachNote:
+              `Perception is cheaper to change than reality. Before spending to make something genuinely faster or easier, ask how to make it feel faster or easier. Progress, proof, framing, and anticipation move the same value needle at a fraction of the cost.`,
+            mistakes: [
+              `Spending heavily on logical fixes (more speed, more features) when a perception fix would do.`,
+              `Ignoring the emotional experience of waiting, choosing, or onboarding.`,
+              `Adding "psychology" that feels manipulative rather than genuinely helpful.`,
+            ],
+            stats: [
+              `The elevator-mirror fix is real building-management lore: mirrors cut wait complaints without changing the wait.`,
+              `The peak-end rule (Kahneman): people judge an experience by its peak and ending, not its average — cheap to design for, powerful in effect.`,
+            ],
+            cases: [
+              `Domino's Pizza Tracker reduced perceived wait and anxiety without cooking a single pizza faster.`,
+              `Uber's live driver map turned an anxious wait into a watchable, tolerable one.`,
+            ],
             title: 'Find psychological solutions',
             hook: 'The cheapest wins are psychological, not logical.',
             principle:
@@ -301,6 +452,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'offer-build-5-steps',
+            coachNote:
+              `A "grand slam" offer isn't one big promise — it's the systematic removal of every reason to fail. List the obstacles, solve each one, then trim to the highest value-to-cost solutions and stack them. The goal: the prospect can't imagine NOT getting the result.`,
+            mistakes: [
+              `Stacking quantity ("100 bonuses!") instead of solving the few obstacles that actually block results.`,
+              `Keeping high-cost, low-value deliverables that hurt margin and dilute focus.`,
+              `Skipping the "list every problem" step, so the offer leaves obvious failure points open.`,
+            ],
+            stats: [
+              `Choice overload (Iyengar & Lepper, 2000): a 24-jam display drew more lookers but ~10x fewer buyers than a 6-jam display — trimming options can raise conversion.`,
+              `Reducing friction and perceived risk at each step compounds into higher conversion — the core mechanic of the offer stack.`,
+            ],
+            cases: [
+              `Hormozi's weight-loss "grocery system" solves one obstacle with six delivery vehicles, then stacks similar bundles for cooking and exercise.`,
+              `Productized services win by pre-solving every common obstacle into one fixed-scope, fixed-price package.`,
+            ],
             title: 'Build the offer in 5 steps',
             hook: 'Make it impossible to fail — solve every obstacle between them and the dream.',
             principle:
@@ -343,6 +509,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'giveaways',
+            coachNote:
+              `A giveaway is a lead-generation engine disguised as a contest. The grand prize buys attention and contact info; the real money is the time-boxed consolation offer to everyone who didn't win. If entries are weak, the prize isn't grand enough.`,
+            mistakes: [
+              `A grand prize that isn't truly grand (or isn't relevant to your core offer), so few enter.`,
+              `Forgetting the consolation offer — leaving 99% of entrants unmonetized.`,
+              `No urgency or entry cap, so the consolation offer loses its punch.`,
+            ],
+            stats: [
+              `Reciprocity (Cialdini): giving something first (a real chance to win) raises the odds people say yes to your follow-up offer.`,
+              `Deadlines and scarcity reliably lift response versus open-ended offers — urgency is one of marketing's most consistent levers.`,
+            ],
+            cases: [
+              `Brands run "win our flagship product" sweepstakes to build huge email lists, then sell to the entrants.`,
+              `Hormozi's dentist: a $6,000 invisible-braces grand prize plus a one-week $2,000-off offer for everyone else.`,
+            ],
             title: 'Giveaways',
             hook: 'One grand prize draws the crowd; the “losers” become your buyers.',
             principle:
@@ -369,6 +550,21 @@ export const BOOKS = [
           },
           {
             id: 'decoy-offer',
+            coachNote:
+              `A cheap entry offer gets the buyer in motion; the premium offer gets them the result. The decoy isn't the product — it's the moment they realize the cheap path won't deliver what they came for. Set up the contrast honestly and let them choose the outcome.`,
+            mistakes: [
+              `Making the decoy so good it satisfies the need, removing the reason to upgrade.`,
+              `Failing to show the premium beside the decoy, so the value gap stays invisible.`,
+              `Bashing the cheap option instead of letting the customer feel its limits.`,
+            ],
+            stats: [
+              `The decoy effect / asymmetric dominance (Huber, Payne & Puto, 1982) reliably shifts choices toward a target option when a cleverly-worse option is present.`,
+              `Ariely's Economist experiment: adding a $125 print-only decoy made far more people pick the $125 print+web bundle, lifting revenue by reshaping the comparison.`,
+            ],
+            cases: [
+              `Hormozi's tanning salon: a $5 five-day pass leads, via the "turkey talk," to a $20/month unlimited membership.`,
+              `Costco's free samples are decoys — you taste, then buy the full-size product.`,
+            ],
             title: 'Decoy offer',
             hook: 'Get them in cheap, then show the premium that actually gets the result.',
             principle:
@@ -395,6 +591,21 @@ export const BOOKS = [
           },
           {
             id: 'buy-x-get-y-free',
+            coachNote:
+              `"Free" is psychologically louder than an equivalent discount. Raise the headline unit price and bundle the rest as free — you grab attention and lift average order value without depending on holiday sales. The free item doesn't even have to be the same product.`,
+            mistakes: [
+              `Discounting instead of using "free," and losing the disproportionate pull of the word.`,
+              `Giving away so much that the bundle loses money instead of raising order value.`,
+              `Choosing free items with no perceived value (free isn't compelling unless the gift matters).`,
+            ],
+            stats: [
+              `The zero-price effect (Shampanier, Mazar & Ariely, 2007): dropping a chocolate's price to $0 made demand jump far more than the price change alone predicts — "free" has outsized power.`,
+              `Bundling raises average order value and hides per-unit price comparison, protecting margin.`,
+            ],
+            cases: [
+              `The boot store's "buy one, get two free" (really three pairs at $200) grew the business while feeling like a steal.`,
+              `"BOGO" promotions remain a retail staple because "free" outperforms an equal percentage discount.`,
+            ],
             title: 'Buy X, get Y free',
             hook: '“Free” beats “discount” — reframe the same price so it pulls harder.',
             principle:
@@ -421,6 +632,21 @@ export const BOOKS = [
           },
           {
             id: 'win-your-money-back',
+            coachNote:
+              `This offer sells accountability and stakes the outcome on action. It de-risks the buy, turns winners into walking testimonials, and filters for committed customers. Only run it if you can stomach the refunds — and always have the next thing ready for the people who win.`,
+            mistakes: [
+              `Running it with no upsell, so winners take their refund and leave.`,
+              `Goals so easy everyone wins (you lose money) or so hard no one tries (no excitement).`,
+              `Offering it when your cash or margins can't absorb the refund rate.`,
+            ],
+            stats: [
+              `Hormozi cites data from thousands of gyms: roughly 10% of customers actually claim the money back — far fewer than fear suggests.`,
+              `Risk-reversal guarantees usually increase sales more than they increase refunds when the product genuinely delivers.`,
+            ],
+            cases: [
+              `Danny's gym: a $600 six-week "win it back" challenge produced before/after photos that brought in 13 new clients.`,
+              `Coaching programs use "hit the milestone or refund" to convert skeptics and drive client action.`,
+            ],
             title: 'Win your money back',
             hook: 'Charge for accountability; let them earn it back by hitting the goal.',
             principle:
@@ -447,6 +673,21 @@ export const BOOKS = [
           },
           {
             id: 'pay-now-or-later',
+            coachNote:
+              `"Pay later if it works" annihilates risk for the buyer and signals supreme confidence from you. It needs a clean yes/no result, a deadline, and a participation condition — plus a next offer for the many who'll happily pay once satisfied.`,
+            mistakes: [
+              `A fuzzy result with no clear yes/no, so you can't fairly charge later.`,
+              `No participation condition (show up / use it), so people fail and you eat the cost.`,
+              `Not taking a card on file, making the "later" charge hard to collect.`,
+            ],
+            stats: [
+              `The pain of paying (Prelec & Loewenstein, 1998): separating consumption from payment reduces friction and raises willingness to commit.`,
+              `Risk reversal (only pay if it works) is among the strongest documented conversion levers — it transfers risk from buyer to seller.`,
+            ],
+            cases: [
+              `Hormozi's speed-reading event: $0 down, $297 charged only if your reading speed doubled (and you attended).`,
+              `Performance-based agencies ("pay per qualified lead") win clients by removing upfront risk.`,
+            ],
             title: 'Pay less now or pay more later',
             hook: 'Remove all risk: pay a little now, or pay more later — only if it works.',
             principle:
@@ -480,6 +721,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'menu-upsell',
+            coachNote:
+              `Stop asking "do you want more?" Decide for the customer what they need, remove what they don't (unselling builds trust), then offer a simple A-or-B choice. You become a prescribing expert, not a pushy seller — and assumptive choices convert.`,
+            mistakes: [
+              `Asking yes/no questions instead of either/or, inviting a "no."`,
+              `Overwhelming the customer with the whole menu instead of prescribing.`,
+              `Skipping the "unsell" step that earns the trust which makes the upsell easy.`,
+            ],
+            stats: [
+              `Choice overload (Iyengar & Lepper, 2000): fewer, curated options convert better — prescribing beats presenting everything.`,
+              `"Unselling" leverages reciprocity and trust (Cialdini): removing what they don't need raises compliance on what they do.`,
+            ],
+            cases: [
+              `Hormozi crossed off the supplements a client didn't need, then asked "chocolate or vanilla?" — and closed effortlessly.`,
+              `Great sommeliers and opticians prescribe ("this frame, these lenses — A or B?") rather than list the whole catalog.`,
+            ],
             title: 'Menu upsell (unsell, then A or B)',
             hook: 'Don’t ask “do you want it?” Ask “A or B?” — after crossing off what they don’t need.',
             principle:
@@ -506,6 +762,21 @@ export const BOOKS = [
           },
           {
             id: 'anchor-upsell',
+            coachNote:
+              `The first number a customer sees becomes the yardstick for every number after it. Show a genuine premium option first; against it, your real offer feels reasonable — even above their original budget. The anchor must be real, not a fake prop.`,
+            mistakes: [
+              `Leading with your target price, so there's no anchor to make it feel cheap.`,
+              `Using an absurd, obviously-fake anchor that destroys trust.`,
+              `Failing to pivot gracefully ("do you care about the designer?") toward the main offer.`,
+            ],
+            stats: [
+              `Anchoring bias (Tversky & Kahneman, 1974): even arbitrary first numbers measurably bias later judgments and valuations.`,
+              `Williams-Sonoma reportedly saw a $279 bread machine sell better after adding a pricier $429 model — the expensive one anchored the cheaper as a deal.`,
+            ],
+            cases: [
+              `Hormozi's suit shop showed a $16,000 suit first; the $2,200 suit then felt cheap (on a $500 budget).`,
+              `Menus place a very expensive "anchor" dish to make mid-priced entrées feel like sensible value.`,
+            ],
             title: 'Anchor upsell',
             hook: 'Show the $16,000 option first, and your $2,000 feels like a steal.',
             principle:
@@ -532,6 +803,21 @@ export const BOOKS = [
           },
           {
             id: 'rollover-upsell',
+            coachNote:
+              `Don't let a finished purchase end the relationship — roll its value into the next, bigger commitment. Spreading a credit across a longer term multiplies retention and lifetime value. Make the next thing better/new/different, and add a one-time urgency window.`,
+            mistakes: [
+              `Letting a great first offer expire with no roll-forward, so you restart acquisition from zero.`,
+              `Crediting toward more of the same instead of a better, bigger next step.`,
+              `No urgency, so the rollover offer gets "thought about" and forgotten.`,
+            ],
+            stats: [
+              `Retention economics (Reichheld/Bain): a 5% increase in retention can lift profits 25–95% — extending commitment is hugely valuable.`,
+              `The sunk-cost and endowment effects make customers value continuing something they've already invested in.`,
+            ],
+            cases: [
+              `Hormozi's friend Justin rolled a $600 challenge into $50/month off a 12-month membership — turning 3-month customers into 12-month ones.`,
+              `Airlines and hotels roll status and credits forward to keep you committed to their ecosystem.`,
+            ],
             title: 'Rollover upsell',
             hook: 'Roll a past purchase into the next one — and stretch the commitment.',
             principle:
@@ -558,6 +844,21 @@ export const BOOKS = [
           },
           {
             id: 'classic-upsell',
+            coachNote:
+              `Solve the next problem the instant the customer feels it. Each add-on should answer a real "but what about…?" so it feels like help, not greed. Stack them in the natural order of problems — and remember the worst outcome is the yes you never asked for.`,
+            mistakes: [
+              `Stopping after one offer when more genuine problems remain unsolved.`,
+              `Upselling things the customer doesn't actually need (erodes trust fast).`,
+              `Pitching add-ons before the core purchase decision is made.`,
+            ],
+            stats: [
+              `McKinsey estimated ~35% of Amazon's revenue comes from its recommendation and cross-sell engine ("customers also bought").`,
+              `Order bumps and cross-sells reliably raise average order value across e-commerce and quick-service restaurants.`,
+            ],
+            cases: [
+              `The car-rental "$19/day" that becomes $100/day via upgrade, late return, insurance, and prepaid gas — each solving a real worry.`,
+              `McDonald's "would you like fries with that?" is the canonical upsell, adding enormous incremental sales.`,
+            ],
             title: 'Classic upsell',
             hook: 'You can’t have X without Y — solve the next problem the moment they feel it.',
             principle:
@@ -591,6 +892,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'payment-plan-downsell',
+            coachNote:
+              `"I can't afford it" usually means "not all at once." Change how they pay, never the price — start at full price and ladder down through financing, then 2, 3, and evenly-spread payments. Schedule charges on paydays and you'll close more without devaluing your offer.`,
+            mistakes: [
+              `Dropping the price at the first objection instead of offering terms.`,
+              `Not scheduling payments around paydays, causing failed charges.`,
+              `Skipping the desire check (1–10) and pushing terms on someone who doesn't truly want it.`,
+            ],
+            stats: [
+              `Buy-Now-Pay-Later exploded precisely because splitting payments lifts conversion and average order value (multiple retail studies).`,
+              `The pain of paying (Prelec & Loewenstein, 1998) drops when a sum is split into smaller, scheduled amounts.`,
+            ],
+            cases: [
+              `Hormozi's first gym: laddering from "half now" to "pay on the 1st" closed a client and covered the rent.`,
+              `Dental and medical providers use third-party financing (e.g., CareCredit) to close instead of discounting.`,
+            ],
             title: 'Payment-plan downsell',
             hook: 'Never lower the price — change how they pay. Start high and work down.',
             principle:
@@ -617,6 +933,21 @@ export const BOOKS = [
           },
           {
             id: 'free-trial-condition',
+            coachNote:
+              `A free trial only works if the user actually experiences the value — so attach a condition that forces activation (attend the training, import the data, book the sessions) and hold a card on file. Usage, not access, creates the switching cost that converts.`,
+            mistakes: [
+              `Offering a no-strings trial, so most users drift away without ever activating.`,
+              `Not taking a card up front, removing the cost of failing the condition.`,
+              `A condition that's busywork instead of the real "aha" moment.`,
+            ],
+            stats: [
+              `In SaaS, reaching an "activation" milestone is one of the strongest predictors of trial-to-paid conversion (product-led-growth research).`,
+              `Switching costs and the endowment effect make an already-used, set-up product feel costly to abandon.`,
+            ],
+            cases: [
+              `Hormozi's HR software conditioned the trial on attending training (card on file); once Leila learned it, switching felt like too much hassle.`,
+              `Costco's free samples are conditional trials — you taste, you're far likelier to buy.`,
+            ],
             title: 'Free trial with a condition',
             hook: 'Free trials fail unless a condition forces them to actually use it.',
             principle:
@@ -643,6 +974,21 @@ export const BOOKS = [
           },
           {
             id: 'feature-downsell',
+            coachNote:
+              `When price is the block, remove value instead of discounting it. Cut quantity, quality, or a feature (even a free guarantee) and lower the price to match. The customer suddenly sees what they're giving up — which protects your pricing integrity and reveals value.`,
+            mistakes: [
+              `Discounting the same package, which devalues it and trains customers to wait for deals.`,
+              `Cutting features the customer doesn't care about (no perceived sacrifice = no effect).`,
+              `Stripping so much that the lower tier can't deliver a result.`,
+            ],
+            stats: [
+              `Good-better-best versioning is a well-documented pricing strategy; a stripped tier captures price-sensitive buyers without cannibalizing premium ones.`,
+              `Removing a guarantee (which costs the seller nothing when the product is good) makes its value salient — a framing effect.`,
+            ],
+            cases: [
+              `A business owner tripled close rate (25%→75%) by lowering price while cutting features, not by discounting.`,
+              `Software "lite" tiers (no integrations or priority support) capture budget buyers while preserving the flagship's price.`,
+            ],
             title: 'Feature downsell',
             hook: 'Lower the price by giving less — not by discounting the same thing.',
             principle:
@@ -675,6 +1021,21 @@ export const BOOKS = [
         concepts: [
           {
             id: 'bonus-offer',
+            coachNote:
+              `Convert one-time buyers into recurring revenue by reframing the sale: "want it free? Become a member." Then stack bonuses you already have (with honest dollar values) and reward prepayment with a discount. High perceived value, low marginal cost, steadier cash flow.`,
+            mistakes: [
+              `Inventing new bonuses (costly) instead of packaging high-value things you already do.`,
+              `Using fake or inflated dollar values — one exposed number kills trust.`,
+              `Selling the subscription without enough bonus value to justify the commitment.`,
+            ],
+            stats: [
+              `Recurring-revenue businesses are typically valued at higher multiples than one-time-sale businesses, thanks to predictable cash flow.`,
+              `Value stacking with stated dollar amounts raises perceived value far above the price — the heart of Hormozi's offer math.`,
+            ],
+            cases: [
+              `A small gym sold memberships by bundling perks it already had (better class times, tanning, VIP events), then upsold prepaid 6-month plans.`,
+              `Amazon Prime stacks bonuses (shipping, video, music, deals) into one membership most members consider a no-brainer.`,
+            ],
             title: 'Continuity bonus offer',
             hook: 'Sell the subscription, sweeten it with bonuses you already have.',
             principle:
@@ -700,6 +1061,21 @@ export const BOOKS = [
           },
           {
             id: 'continuity-discount',
+            coachNote:
+              `Trade an upfront free period for a long commitment, and protect it with a cancellation fee equal to the discount. The free stretch wins the relationship; the fee keeps it; the exit interview turns churn into insight (and a chance to re-sell). Decide how you apply the discount before you offer it.`,
+            mistakes: [
+              `Giving free time with no commitment or cancellation policy, so people take the free part and leave.`,
+              `No exit interview, so you lose the lesson and the save/re-sell opportunity.`,
+              `A cancellation fee that doesn't match the discount — too small to protect you, or so large it feels predatory.`,
+            ],
+            stats: [
+              `Retention economics (Reichheld/Bain): a 5% lift in retention can raise profits 25–95% — long commitments compound value.`,
+              `Acquiring a new customer can cost 5–25x more than retaining one (widely cited in HBR) — continuity protects your most valuable asset.`,
+            ],
+            cases: [
+              `The trash-business owner gave one year free for a five-year commitment, then sold the company for a fortune.`,
+              `Internet and telecom providers use "first month free" plus contract terms (and early-termination fees) to lock in long commitments.`,
+            ],
             title: 'Continuity discount offer',
             hook: 'Give the first stretch free in exchange for a long commitment.',
             principle:
@@ -726,6 +1102,21 @@ export const BOOKS = [
           },
           {
             id: 'waved-fee-offer',
+            coachNote:
+              `Make staying easy and leaving expensive. Offer a real one-time fee, then let customers waive it by committing long-term — with the fee owed either way if they quit early. Most choose the commitment, giving you instant retention and cash flow. It shines for slow-to-work services where people quit on emotion.`,
+            mistakes: [
+              `A waiver fee too small to actually deter early cancellation.`,
+              `Using it on fast-result services where lock-in isn't needed (and feels heavy-handed).`,
+              `Hiding the terms — surprise fees destroy trust and invite chargebacks.`,
+            ],
+            stats: [
+              `Loss aversion (Kahneman & Tversky): the threat of forfeiting a fee looms about twice as large as an equivalent gain, keeping people committed.`,
+              `Commitment devices and switching costs are well-documented mechanisms for improving follow-through and retention.`,
+            ],
+            cases: [
+              `Hormozi's "legend" offered $5k fee + $1k/mo (quit anytime) vs. waiving the $5k for a 12-month commitment — most chose to commit and stayed.`,
+              `Gyms famously waive initiation fees on annual contracts; DellaVigna & Malmendier (2006) found members often overpay and rarely cancel.`,
+            ],
             title: 'Waved-fee offer',
             hook: 'Pay a big fee to stay flexible — or commit long-term to waive it.',
             principle:
