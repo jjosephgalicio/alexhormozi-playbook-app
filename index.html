@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0F5132" />
+  <meta name="description" content="Action-first playbook from Alex Hormozi's $100M Offers & Money Models." />
+  <title>The Playbook — Hormozi Offers &amp; Money Models</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <button class="hdr-btn" id="backBtn" aria-label="Go back" hidden>&lsaquo;</button>
+    <a href="#/home" class="app-title" id="appTitle">The&nbsp;Playbook</a>
+    <button class="hdr-btn" id="themeBtn" aria-label="Toggle light or dark theme">◐</button>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Primary">
+    <a href="#/home" class="tab" data-tab="home"><span class="tab-ico" aria-hidden="true">⌂</span><span class="tab-label">Home</span></a>
+    <a href="#/library" class="tab" data-tab="library"><span class="tab-ico" aria-hidden="true">▦</span><span class="tab-label">Library</span></a>
+    <a href="#/tools" class="tab" data-tab="tools"><span class="tab-ico" aria-hidden="true">⚒</span><span class="tab-label">Tools</span></a>
+    <a href="#/saved" class="tab" data-tab="saved"><span class="tab-ico" aria-hidden="true">★</span><span class="tab-label">Saved</span></a>
+  </nav>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
