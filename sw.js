@@ -1,6 +1,16 @@
-// Service worker — precache the whole app so it runs with zero network.
-// Bump CACHE whenever assets change to roll out an update.
-const CACHE = 'hpb-v3';
+// Service worker — self-healing updates.
+//
+// Strategy: NETWORK-FIRST (with a short timeout) so the app always shows the latest
+// deploy when online, and falls back to the cache when offline. The cache is an
+// offline safety net, not the source of truth — so updates take effect automatically
+// without needing to bump this file or the cache name on every deploy.
+//
+// `cache: 'reload'` on asset fetches bypasses the browser's HTTP cache, defeating any
+// long-lived max-age from a previous deploy. skipWaiting + clients.claim activate a new
+// worker immediately; the page reloads itself on controllerchange (see app.js).
+
+const CACHE = 'hpb-v4';
+const TIMEOUT = 3500;
 
 const ASSETS = [
   './',
@@ -31,34 +41,59 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).then(() => self.skipWaiting()));
+  e.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    // best-effort precache (a single 404 must not block the update), bypassing HTTP cache
+    await Promise.allSettled(ASSETS.map(a => cache.add(new Request(a, { cache: 'reload' }))));
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', (e) => {
-  e.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
-      .then(() => self.clients.claim())
-  );
+  e.waitUntil((async () => {
+    const keys = await caches.keys();
+    await Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)));
+    await self.clients.claim();
+  })());
+});
+
+self.addEventListener('message', (e) => {
+  if (e.data === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('fetch', (e) => {
   const { request } = e;
   if (request.method !== 'GET') return;
-
-  e.respondWith(
-    caches.match(request).then(hit => {
-      if (hit) return hit;
-      return fetch(request).then(res => {
-        // cache same-origin successes for next time
-        if (res.ok && new URL(request.url).origin === self.location.origin) {
-          const copy = res.clone();
-          caches.open(CACHE).then(c => c.put(request, copy)).catch(() => {});
-        }
-        return res;
-      }).catch(() =>
-        request.mode === 'navigate' ? caches.match('./index.html') : Response.error()
-      );
-    })
-  );
+  if (new URL(request.url).origin !== self.location.origin) return;
+  e.respondWith(networkFirst(request));
 });
+
+function withTimeout(promise, ms) {
+  return new Promise((resolve, reject) => {
+    const t = setTimeout(() => reject(new Error('timeout')), ms);
+    promise.then(v => { clearTimeout(t); resolve(v); },
+                 err => { clearTimeout(t); reject(err); });
+  });
+}
+
+// navigate requests can't safely take a fetch init; everything else bypasses HTTP cache
+function fetchFresh(request) {
+  return request.mode === 'navigate' ? fetch(request) : fetch(request, { cache: 'reload' });
+}
+
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE);
+  const cached = await cache.match(request);
+  try {
+    const fresh = await withTimeout(fetchFresh(request), TIMEOUT);
+    if (fresh && fresh.ok) cache.put(request, fresh.clone());
+    return fresh;
+  } catch {
+    if (cached) return cached;
+    if (request.mode === 'navigate') {
+      const shell = await cache.match('./index.html');
+      if (shell) return shell;
+    }
+    return Response.error();
+  }
+}

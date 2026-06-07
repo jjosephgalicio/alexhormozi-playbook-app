@@ -92,8 +92,28 @@ if (playId) {
 }
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('sw.js').catch(err =>
-      console.warn('SW registration failed:', err));
+  // When a new service worker takes control (i.e. a new deploy activated), reload once
+  // so the page picks up the fresh assets. Skip on the very first install (no prior
+  // controller) to avoid an unnecessary reload.
+  const hadController = !!navigator.serviceWorker.controller;
+  let refreshing = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || refreshing) return;
+    refreshing = true;
+    window.location.reload();
+  });
+
+  window.addEventListener('load', async () => {
+    try {
+      const reg = await navigator.serviceWorker.register('sw.js');
+      reg.update();
+      // proactively check for updates periodically and whenever the app regains focus
+      setInterval(() => reg.update(), 30 * 60 * 1000);
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') reg.update();
+      });
+    } catch (err) {
+      console.warn('SW registration failed:', err);
+    }
   });
 }
