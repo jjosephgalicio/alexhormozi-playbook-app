@@ -289,13 +289,24 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
   padding: 6px 10px 0 0; color: var(--accent); font-weight: 600;
 }
 
-/* examples list */
-.ex-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.ex-list li {
-  position: relative; background: var(--paper-2); border: 1px solid var(--line);
-  border-left: 3px solid var(--gold); border-radius: 0 var(--radius-s) var(--radius-s) 0;
-  padding: 11px 14px; font-size: 0.94rem; color: var(--ink-2); box-shadow: var(--shadow-1);
+/* examples as visual cards (one icon cue per industry) */
+.ex-grid { display: grid; gap: 10px; }
+.ex-card {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--paper-2); border: 1px solid var(--line);
+  border-radius: var(--radius-s); padding: 12px 13px;
+  font-size: 0.94rem; color: var(--ink-2); box-shadow: var(--shadow-1);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
 }
+.ex-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); border-color: var(--line-2); }
+.ex-ico {
+  flex: 0 0 auto; width: 38px; height: 38px; border-radius: 10px;
+  display: grid; place-items: center; color: var(--accent);
+  background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+}
+.ex-ico svg { width: 21px; height: 21px; }
+.ex-text { padding-top: 2px; }
+@media (min-width: 560px) { .ex-grid { grid-template-columns: 1fr 1fr; } }
 
 /* action checklist */
 .check { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }

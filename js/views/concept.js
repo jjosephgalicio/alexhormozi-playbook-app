@@ -2,6 +2,7 @@ import { el, svgHost, dateKey } from '../util.js';
 import { byId } from '../data/lookup.js';
 import { renderChecklist } from '../components/card.js';
 import { coverSVG } from '../components/cover.js';
+import { iconFor } from '../components/icons.js';
 import { nextStreak } from '../progress.js';
 
 export function renderConcept({ store, param }) {
@@ -27,10 +28,14 @@ export function renderConcept({ store, param }) {
       el('div', { class: 'c-hero-crumb' }, `${book.title} · ${mod.title}`),
       el('h1', { class: 'c-hero-title' }, c.title)));
 
-  // examples list
+  // examples as visual cards (icon cue per industry)
   const examples = el('div', { class: 'c-sec' },
     el('div', { class: 'c-sec-label' }, 'More real-world examples'),
-    el('ul', { class: 'ex-list' }, ...c.examples.map(x => el('li', {}, x))));
+    el('div', { class: 'ex-grid' },
+      ...c.examples.map(x =>
+        el('div', { class: 'ex-card' },
+          svgHost('ex-ico', iconFor(x)),
+          el('div', { class: 'ex-text' }, x)))));
 
   // checklist
   const checked = store.get().checklists[c.id] || [];

@@ -1,6 +1,6 @@
 // Service worker — precache the whole app so it runs with zero network.
 // Bump CACHE whenever assets change to roll out an update.
-const CACHE = 'hpb-v1';
+const CACHE = 'hpb-v2';
 
 const ASSETS = [
   './',
@@ -17,6 +17,7 @@ const ASSETS = [
   './js/data/lookup.js',
   './js/components/card.js',
   './js/components/cover.js',
+  './js/components/icons.js',
   './js/views/home.js',
   './js/views/library.js',
   './js/views/concept.js',
