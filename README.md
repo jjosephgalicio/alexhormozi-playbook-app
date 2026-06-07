@@ -4,11 +4,22 @@ A mobile-first, **fully-offline** Progressive Web App that turns Alex Hormozi's
 *$100M Offers* and *$100M Money Models* into an action-first learning playbook —
 built so an entrepreneur can digest the ideas and actually implement them day to day.
 
-- **Reference library** of ~25 action-first concept cards (principle → why → story → apply → checklist)
+- **Reference library** of 26 action-first concept cards, each with: principle → why →
+  coach's note → story → applied example → **more real-world examples** → **case studies**
+  → **common mistakes** → **by-the-numbers** (researched, attributed) → action checklist
+- 🔊 **Offline audiobook read-aloud** — a built-in player (Web Speech API) with voice
+  picker, speed control, live section highlighting, and a continuous "Listen to all"
+  playlist. Shareable deep link: `?play=<conceptId>`
+- 🖼️ **Visual example cards** with per-industry icons (for visual learners) and generative
+  per-module cover art
 - **Progress & streaks**, **bookmarks & notes**, **action checklists**
 - Two **builder tools**: an Offer Builder and a Money Model Builder
 - **Premium-editorial** design with light/dark reading modes
 - Plain HTML/CSS/JS, **no build step**, **no CDNs**, works with zero network after first load
+
+> Read-aloud uses your device's installed voices, so it works fully offline. Voice
+> quality depends on the device — modern phones (iOS/Android) and Edge on Windows have
+> excellent natural voices you can select in the player.
 
 ## Run locally
 
