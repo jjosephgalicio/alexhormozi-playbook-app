@@ -1,0 +1,11 @@
+{
+  "name": "hormozi-playbook",
+  "version": "1.0.0",
+  "description": "A mobile-first, fully-offline PWA playbook from Alex Hormozi's $100M Offers & Money Models.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "serve": "npx serve ."
+  }
+}
