@@ -28,6 +28,13 @@ export const BOOKS = [
         concepts: [
           {
             id: 'differentiate',
+            gym: [
+              { kind: 'gym', text: `Don't sell "gym membership." Sell "Lose 20 lbs in 12 weeks with a coach who texts you daily, or your next month is free." Now no one can price-compare you to the $10 gym down the street.` },
+              { kind: 'gym', text: `Name your method — "The 6-Week Metabolic Reset" — so members feel they're buying a system, not access to dumbbells.` },
+              { kind: 'app', text: `Don't ship "another workout app." Niche it: "the only strength app that auto-adjusts your program from your Apple Watch recovery data." An uncopyable mechanism ends the price war with free apps.` },
+              { kind: 'app', text: `Bundle human accountability into the app (a weekly check-in video from a real coach) so you're compared to $200/mo coaching, not to free YouTube.` },
+              { kind: 'app', text: `Lead your App Store listing with the outcome ("your first pull-up in 8 weeks"), not the features ("track sets and reps").` },
+            ],
             coachNote:
               `Commoditization is a slow death by a thousand discounts. Your job isn't to be cheaper — it's to be the only logical choice for one specific person. Pick a unique mechanism (a named method, a guarantee, a delivery format) competitors can't claim, and the price conversation quietly disappears.`,
             mistakes: [
@@ -76,6 +83,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'market-pain',
+            gym: [
+              { kind: 'gym', text: `Target the acute moment: "Wedding in 90 days?" or "Doctor just warned you about your blood sugar?" These convert far faster than a vague "get fit."` },
+              { kind: 'gym', text: `Run post-holiday and "summer's coming" campaigns — sell the painkiller exactly when the pain spikes.` },
+              { kind: 'app', text: `In onboarding, ask "What's the one thing you hate about your body right now?" and mirror it back in the program name — pain articulated drives sign-ups.` },
+              { kind: 'app', text: `Push-notify around the relapse pain ("It's been 5 days — let's grab one quick win") instead of a generic "time to work out."` },
+            ],
             coachNote:
               `Demand follows pain, not features. Before crafting the offer, get obsessive about the exact, present-tense problem — the words your customer says at 2 a.m. The more precisely you describe their pain back to them, the more they assume you can solve it.`,
             mistakes: [
@@ -116,6 +129,12 @@ export const BOOKS = [
           },
           {
             id: 'market-purchasing-power',
+            gym: [
+              { kind: 'gym', text: `A premium small-group studio in an affluent suburb out-earns a budget gym in a low-income area with the same effort — pick the segment that can pay $200+/mo.` },
+              { kind: 'gym', text: `Sell high-ticket transformation packages ($1,500–$5,000) to busy professionals, not $19 day passes to students.` },
+              { kind: 'app', text: `Charge $29–$49/mo for a coaching app aimed at career-driven 30–50-year-olds, not $2.99 aimed at teens — same build, very different revenue.` },
+              { kind: 'app', text: `Add a VIP tier with 1:1 coaching for the slice of users who will happily pay for results, instead of pricing everything for the cheapest user.` },
+            ],
             coachNote:
               `Willingness to pay is part of the market, not an afterthought. The same effort sells far better to people who already spend on the problem. Follow the existing budgets — find who's already paying to solve this, and sell them a better way.`,
             mistakes: [
@@ -156,6 +175,12 @@ export const BOOKS = [
           },
           {
             id: 'market-targetable',
+            gym: [
+              { kind: 'gym', text: `Your future members cluster in local Facebook groups, the running club, the CrossFit affiliate list, and physiotherapy referrals — go there instead of generic billboards.` },
+              { kind: 'gym', text: `Partner with nearby dietitians, chiropractors, and corporate HR wellness programs for a steady, reachable referral pipeline.` },
+              { kind: 'app', text: `Reach lifters in r/Fitness, fitness TikTok, and coach affiliate networks; sponsor niche fitness creators whose audience IS your buyer.` },
+              { kind: 'app', text: `Build an email list from a free "5-day form-check challenge" so you own a reachable audience instead of renting ad clicks forever.` },
+            ],
             coachNote:
               `Reachability is a growth multiplier hiding in plain sight. If your buyers already cluster somewhere — a subreddit, an association, a hashtag, a trade show — your acquisition cost plummets. Choose markets you can reach repeatedly and cheaply, not just ones that exist.`,
             mistakes: [
@@ -196,6 +221,12 @@ export const BOOKS = [
           },
           {
             id: 'market-growing',
+            gym: [
+              { kind: 'gym', text: `Ride growing sub-niches — strength training for women 40+, longevity/healthspan, and recovery (sauna, cold plunge) are all expanding fast.` },
+              { kind: 'gym', text: `Hybrid memberships (in-person + app) are growing; pure treadmill-row gyms are commoditizing.` },
+              { kind: 'app', text: `Wearable-integrated coaching (Whoop, Oura, Apple Watch) is a rising tide — build on top of it.` },
+              { kind: 'app', text: `"Strength training for women" and "midlife metabolic health" are booming app categories with far less competition than generic calorie trackers.` },
+            ],
             coachNote:
               `A rising market forgives mistakes; a shrinking one punishes excellence. Tailwinds compound. Anchor your business in health, wealth, or relationships, then find the fastest-growing sub-niche inside it.`,
             mistakes: [
@@ -236,6 +267,12 @@ export const BOOKS = [
           },
           {
             id: 'pick-a-niche',
+            gym: [
+              { kind: 'gym', text: `"Postpartum strength for new moms" or "strength for men over 50 with bad knees" beats "a gym for everyone" — you become the obvious choice and can charge more.` },
+              { kind: 'gym', text: `F45, Orangetheory, and CrossFit grew by owning one specific format and identity, not by being a generic gym.` },
+              { kind: 'app', text: `Future and Ladder won by niching hard (1:1 remote coaching; strength programs from elite coaches) instead of being "a fitness app."` },
+              { kind: 'app', text: `Pick one avatar — "busy dads who want abs in 20-minute home sessions" — and let the entire app speak only to them.` },
+            ],
             coachNote:
               `Specialization is the fastest path to premium pricing. "For everyone" reads as "for no one." When the prospect thinks "this is literally me," price sensitivity drops and trust spikes. Commit long enough to master the niche before judging it.`,
             mistakes: [
@@ -283,6 +320,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'price-vs-value',
+            gym: [
+              { kind: 'gym', text: `$300/mo coaching sounds steep until reframed: "$10 a day to look and feel 10 years younger, with a coach in your corner." Anchor it against a daily coffee.` },
+              { kind: 'gym', text: `Show the value stack — program + nutrition + weekly check-ins + community = "$1,200 of coaching for $399."` },
+              { kind: 'app', text: `$39/mo feels like a lot for an app until reframed as "one-fifth the price of a single PT session — every day of the month."` },
+              { kind: 'app', text: `Put the outcome on the paywall ("members lose an average of X in 90 days"), not the feature list, so value visibly outweighs price.` },
+            ],
             coachNote:
               `A price is never expensive or cheap in a vacuum — only relative to the value the buyer can see. Make the return obvious before you ever name the number. Sell the destination, and the ticket price stops mattering.`,
             mistakes: [
@@ -323,6 +366,12 @@ export const BOOKS = [
           },
           {
             id: 'charge-premium',
+            gym: [
+              { kind: 'gym', text: `Planet Fitness goes ultra-cheap ($10) and wins on volume; the opposite play — a $200–$300 premium studio — wins on margin, results, and word-of-mouth. Pick a lane; don't get stuck in the mushy middle.` },
+              { kind: 'gym', text: `Members who pay premium show up more and get better results, which fuels the referrals and before/after photos that grow the gym.` },
+              { kind: 'app', text: `A higher price funds real coaches, better content, and faster development — a $40/mo app can out-deliver a $5 one and still feel like a steal.` },
+              { kind: 'app', text: `Premium pricing filters for committed users who actually finish programs (and leave 5-star reviews).` },
+            ],
             coachNote:
               `Price isn't just what you collect — it's a tool that shapes behavior. A higher price raises client commitment (so they show up and get results) and funds a better product (which creates a flywheel). Charging more and over-delivering is often kinder than charging little and under-serving.`,
             mistakes: [
@@ -364,6 +413,12 @@ export const BOOKS = [
           },
           {
             id: 'four-value-drivers',
+            gym: [
+              { kind: 'gym', text: `Dream outcome (lean, strong) up; certainty (guarantee + before/afters) up; time (clear 12-week milestones) down; effort (done-for-you meal plans, pre-booked sessions) down.` },
+              { kind: 'gym', text: `Slash effort with "just show up" — programming, nutrition, and scheduling all handled for the member.` },
+              { kind: 'app', text: `Cut time-to-result with a quick "first win" workout in week one; cut effort with auto-generated programs and grocery lists.` },
+              { kind: 'app', text: `Raise certainty with progress charts, streaks, and "members like you" social proof right inside the app.` },
+            ],
             coachNote:
               `Value is a fraction you can engineer: raise the dream outcome and the perceived likelihood, lower the time and the effort. Most competitors only promise a bigger dream — the durable edge is cutting time-to-result and effort, because those are hardest to copy and what people pay a premium to escape.`,
             mistakes: [
@@ -405,6 +460,12 @@ export const BOOKS = [
           },
           {
             id: 'psychological-solutions',
+            gym: [
+              { kind: 'gym', text: `A visible progress board, a before/after wall, and milestone celebrations make progress feel real even before the scale moves.` },
+              { kind: 'gym', text: `"Reserve your spot" class booking creates commitment and cuts no-shows — a psychological fix, not a logical one.` },
+              { kind: 'app', text: `Streaks, rings, and badges make effort feel rewarding — Apple Fitness+ closing-the-rings is the canonical example.` },
+              { kind: 'app', text: `Show "you're 80% to your weekly goal" — the goal-gradient effect pulls users to finish.` },
+            ],
             coachNote:
               `Perception is cheaper to change than reality. Before spending to make something genuinely faster or easier, ask how to make it feel faster or easier. Progress, proof, framing, and anticipation move the same value needle at a fraction of the cost.`,
             mistakes: [
@@ -452,6 +513,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'offer-build-5-steps',
+            gym: [
+              { kind: 'gym', text: `Dream = "down two dress sizes in 8 weeks." Obstacles (no time, don't know what to do, hate cooking) → solve each with booked sessions, a done-for-you plan, a meal-prep guide, and accountability texts → stack into one "Transformation" offer.` },
+              { kind: 'gym', text: `Add a guarantee ("hit your goal or keep training free until you do") to make the stack irresistible.` },
+              { kind: 'app', text: `Dream = "first pull-up." Obstacles (no plan, no equipment, no feedback) → solved with a progressive program, band/home options, and video form checks → stacked as one premium tier.` },
+              { kind: 'app', text: `Trim high-cost, low-value features; keep the few that drive results (program + check-ins + community) and lead with those.` },
+            ],
             coachNote:
               `A "grand slam" offer isn't one big promise — it's the systematic removal of every reason to fail. List the obstacles, solve each one, then trim to the highest value-to-cost solutions and stack them. The goal: the prospect can't imagine NOT getting the result.`,
             mistakes: [
@@ -509,6 +576,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'giveaways',
+            gym: [
+              { kind: 'gym', text: `Grand prize = a free 12-week transformation ($2,000 value); every non-winner who entered gets 50% off their first month if they start within 7 days.` },
+              { kind: 'gym', text: `Capture entrants' contact info and goals, then have the front desk personally call non-winners within 24 hours.` },
+              { kind: 'app', text: `Give away "1 year of Pro free" to one winner; everyone else who entered gets 3 months free if they upgrade this week.` },
+              { kind: 'app', text: `Run the giveaway with a fitness influencer to capture thousands of perfectly-targeted emails for the app.` },
+            ],
             coachNote:
               `A giveaway is a lead-generation engine disguised as a contest. The grand prize buys attention and contact info; the real money is the time-boxed consolation offer to everyone who didn't win. If entries are weak, the prize isn't grand enough.`,
             mistakes: [
@@ -550,6 +623,12 @@ export const BOOKS = [
           },
           {
             id: 'decoy-offer',
+            gym: [
+              { kind: 'gym', text: `$1 first-week trial (decoy) → after they feel the coaching, present the 12-week transformation as the thing that actually gets the result.` },
+              { kind: 'gym', text: `A free InBody scan or movement assessment gets them in the door; the premium coaching package closes once they see the gap between where they are and where they want to be.` },
+              { kind: 'app', text: `Free 7-day trial (decoy) → on day 5, show the annual "Coached" plan with a human check-in as the real path to results.` },
+              { kind: 'app', text: `A free "fitness age" quiz leads straight to the paid program built to fix exactly what the quiz exposed.` },
+            ],
             coachNote:
               `A cheap entry offer gets the buyer in motion; the premium offer gets them the result. The decoy isn't the product — it's the moment they realize the cheap path won't deliver what they came for. Set up the contrast honestly and let them choose the outcome.`,
             mistakes: [
@@ -591,6 +670,12 @@ export const BOOKS = [
           },
           {
             id: 'buy-x-get-y-free',
+            gym: [
+              { kind: 'gym', text: `"Buy 6 months, get 3 months free" beats a 33% discount — same price, more pull, and a longer commitment.` },
+              { kind: 'gym', text: `"Join today and your partner trains free" — the free add-on makes it irresistible and brings in a second committed member.` },
+              { kind: 'app', text: `"Buy the annual plan, get the nutrition course + a resistance-band set free" — bundle free complements instead of discounting.` },
+              { kind: 'app', text: `"Refer a friend, you both get a free month" turns "free" into a built-in growth loop.` },
+            ],
             coachNote:
               `"Free" is psychologically louder than an equivalent discount. Raise the headline unit price and bundle the rest as free — you grab attention and lift average order value without depending on holiday sales. The free item doesn't even have to be the same product.`,
             mistakes: [
@@ -632,6 +717,12 @@ export const BOOKS = [
           },
           {
             id: 'win-your-money-back',
+            gym: [
+              { kind: 'gym', text: `"$600 for the 6-week challenge — hit your goal and earn it all back." (The exact play Hormozi tested across thousands of gyms.) Winners post before/afters that bring in new members.` },
+              { kind: 'gym', text: `Most who qualify re-invest the refund into ongoing coaching, and the testimonials are worth more than the refunds.` },
+              { kind: 'app', text: `"Finish all 60 workouts in 90 days and we refund your year." Completion (the condition) is exactly what drives results and retention.` },
+              { kind: 'app', text: `Let users stake a deposit they earn back by hitting weekly streaks — accountability that doubles as marketing when they share the win.` },
+            ],
             coachNote:
               `This offer sells accountability and stakes the outcome on action. It de-risks the buy, turns winners into walking testimonials, and filters for committed customers. Only run it if you can stomach the refunds — and always have the next thing ready for the people who win.`,
             mistakes: [
@@ -673,6 +764,12 @@ export const BOOKS = [
           },
           {
             id: 'pay-now-or-later',
+            gym: [
+              { kind: 'gym', text: `"Pay $0 today; if you don't lose 10 lbs in 8 weeks (and you attended your sessions), you owe nothing." Card on file, almost no risk to join.` },
+              { kind: 'gym', text: `It removes the biggest objection ("what if it doesn't work for me?"), and the condition (attendance) is exactly what makes it work.` },
+              { kind: 'app', text: `"Free until you complete onboarding and 3 workouts — then it bills." Pay-after-activation lifts trial-to-paid conversion.` },
+              { kind: 'app', text: `"Hit your first milestone and you'll know it works before your card is ever charged."` },
+            ],
             coachNote:
               `"Pay later if it works" annihilates risk for the buyer and signals supreme confidence from you. It needs a clean yes/no result, a deadline, and a participation condition — plus a next offer for the many who'll happily pay once satisfied.`,
             mistakes: [
@@ -721,6 +818,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'menu-upsell',
+            gym: [
+              { kind: 'gym', text: `At sign-up: "You don't need the bodybuilding split — you need fat loss. Want the 3-day or the 4-day coaching plan?" Cross off what they don't need, then ask A or B.` },
+              { kind: 'gym', text: `Prescribe the add-on: "With your plan you'll want either the meal-prep service or nutrition coaching — which fits your week better?"` },
+              { kind: 'app', text: `In-app: "Skip the advanced powerlifting track for now — start with Foundations. Dumbbell version or full-gym version?"` },
+              { kind: 'app', text: `Frame tiers as A/B at checkout ("Self-guided or Coached?") instead of a yes/no upgrade prompt.` },
+            ],
             coachNote:
               `Stop asking "do you want more?" Decide for the customer what they need, remove what they don't (unselling builds trust), then offer a simple A-or-B choice. You become a prescribing expert, not a pushy seller — and assumptive choices convert.`,
             mistakes: [
@@ -762,6 +865,12 @@ export const BOOKS = [
           },
           {
             id: 'anchor-upsell',
+            gym: [
+              { kind: 'gym', text: `Present the $5,000 "12-month VIP private coaching" first; the $1,500 small-group transformation then feels affordable.` },
+              { kind: 'gym', text: `Keep an "elite 1:1" package on the menu (few buy it) so the core package looks like the smart-value choice.` },
+              { kind: 'app', text: `Show the $499/yr "1:1 Coached" tier first; the $99/yr "Pro" plan suddenly looks like a steal.` },
+              { kind: 'app', text: `A "Founders Lifetime — $1,200" option anchors the annual plan as the sensible pick.` },
+            ],
             coachNote:
               `The first number a customer sees becomes the yardstick for every number after it. Show a genuine premium option first; against it, your real offer feels reasonable — even above their original budget. The anchor must be real, not a fake prop.`,
             mistakes: [
@@ -803,6 +912,12 @@ export const BOOKS = [
           },
           {
             id: 'rollover-upsell',
+            gym: [
+              { kind: 'gym', text: `Roll the $600 challenge fee into $50/mo off a 12-month membership (Justin's play) — turn 6-week clients into year-long members.` },
+              { kind: 'gym', text: `Credit a member's intro-package spend toward a premium transformation — today only.` },
+              { kind: 'app', text: `Credit a user's recent monthly spend toward an annual upgrade ("your last 2 months count toward a year of Pro").` },
+              { kind: 'app', text: `Roll a completed challenge into a discounted next-level program to keep momentum — and the subscription — going.` },
+            ],
             coachNote:
               `Don't let a finished purchase end the relationship — roll its value into the next, bigger commitment. Spreading a credit across a longer term multiplies retention and lifetime value. Make the next thing better/new/different, and add a one-time urgency window.`,
             mistakes: [
@@ -844,6 +959,12 @@ export const BOOKS = [
           },
           {
             id: 'classic-upsell',
+            gym: [
+              { kind: 'gym', text: `Membership → personal training → nutrition coaching → recovery (massage/sauna) → supplements. Solve the next problem as each one surfaces.` },
+              { kind: 'gym', text: `"You can't out-train a bad diet" leads naturally from training into the nutrition add-on.` },
+              { kind: 'app', text: `App subscription → nutrition module → 1:1 coaching add-on → branded bands/gear. Each step solves the next problem.` },
+              { kind: 'app', text: `Right after they commit: "Your program's set — want auto-synced meal planning to match your goal?"` },
+            ],
             coachNote:
               `Solve the next problem the instant the customer feels it. Each add-on should answer a real "but what about…?" so it feels like help, not greed. Stack them in the natural order of problems — and remember the worst outcome is the yes you never asked for.`,
             mistakes: [
@@ -892,6 +1013,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'payment-plan-downsell',
+            gym: [
+              { kind: 'gym', text: `"$1,500 transformation — or 3 payments of $525 on your paydays." Change how they pay, never the price.` },
+              { kind: 'gym', text: `Bill the challenge in weekly drafts aligned to payday to cut failed payments.` },
+              { kind: 'app', text: `Offer the annual plan as 3 monthly installments instead of discounting the sticker price.` },
+              { kind: 'app', text: `Use third-party financing for high-ticket coaching tiers before ever lowering the price.` },
+            ],
             coachNote:
               `"I can't afford it" usually means "not all at once." Change how they pay, never the price — start at full price and ladder down through financing, then 2, 3, and evenly-spread payments. Schedule charges on paydays and you'll close more without devaluing your offer.`,
             mistakes: [
@@ -933,6 +1060,12 @@ export const BOOKS = [
           },
           {
             id: 'free-trial-condition',
+            gym: [
+              { kind: 'gym', text: `"Free first week — but you must book and attend 3 sessions." Attendance builds the habit (and the early result) that converts them.` },
+              { kind: 'gym', text: `Take a card on file for the free trial; the condition (showing up) drives activation, not just empty sign-ups.` },
+              { kind: 'app', text: `"Your free trial unlocks once you complete the assessment and your first workout." Activation strongly predicts paid conversion.` },
+              { kind: 'app', text: `Condition the trial on connecting a wearable — once their data is in, switching apps feels costly.` },
+            ],
             coachNote:
               `A free trial only works if the user actually experiences the value — so attach a condition that forces activation (attend the training, import the data, book the sessions) and hold a card on file. Usage, not access, creates the switching cost that converts.`,
             mistakes: [
@@ -974,6 +1107,12 @@ export const BOOKS = [
           },
           {
             id: 'feature-downsell',
+            gym: [
+              { kind: 'gym', text: `Can't afford 1:1? Offer small-group coaching (fewer 1:1 minutes) at a lower price — less service, not a discount.` },
+              { kind: 'gym', text: `Drop from 4 sessions/week to 2, or remove the guarantee, to justify a lower tier.` },
+              { kind: 'app', text: `Offer a "self-guided" tier (no human check-ins) below the "Coached" tier — cut the costly feature, lower the price.` },
+              { kind: 'app', text: `A "Lite" plan without wearable integration or live classes captures budget users without devaluing Pro.` },
+            ],
             coachNote:
               `When price is the block, remove value instead of discounting it. Cut quantity, quality, or a feature (even a free guarantee) and lower the price to match. The customer suddenly sees what they're giving up — which protects your pricing integrity and reveals value.`,
             mistakes: [
@@ -1021,6 +1160,12 @@ export const BOOKS = [
         concepts: [
           {
             id: 'bonus-offer',
+            gym: [
+              { kind: 'gym', text: `"Become a member and get free InBody scans, guest passes, and monthly member events" — bonuses you already have, each with a stated dollar value; prepay 6 months for a discount.` },
+              { kind: 'gym', text: `Stack a free starter kit (shaker, band, nutrition guide) onto the annual membership.` },
+              { kind: 'app', text: `The annual plan includes a free nutrition course, exclusive challenges, and a monthly live coach Q&A — high perceived value, near-zero marginal cost.` },
+              { kind: 'app', text: `"Pay annually and get a resistance-band set shipped free" — a tangible bonus on a digital product.` },
+            ],
             coachNote:
               `Convert one-time buyers into recurring revenue by reframing the sale: "want it free? Become a member." Then stack bonuses you already have (with honest dollar values) and reward prepayment with a discount. High perceived value, low marginal cost, steadier cash flow.`,
             mistakes: [
@@ -1061,6 +1206,12 @@ export const BOOKS = [
           },
           {
             id: 'continuity-discount',
+            gym: [
+              { kind: 'gym', text: `"First month free when you commit to 12 months" — set the cancellation fee equal to that free month so they don't bail after the freebie.` },
+              { kind: 'gym', text: `Corporate deal: "First 2 months free on a 2-year contract" for the whole team — predictable long-term revenue.` },
+              { kind: 'app', text: `"2 months free on the annual plan; cancel early and the discount is clawed back." Telecom-style continuity for the app.` },
+              { kind: 'app', text: `Offer a long "transformation year" with the first month free and an exit-interview waiver on the cancel fee.` },
+            ],
             coachNote:
               `Trade an upfront free period for a long commitment, and protect it with a cancellation fee equal to the discount. The free stretch wins the relationship; the fee keeps it; the exit interview turns churn into insight (and a chance to re-sell). Decide how you apply the discount before you offer it.`,
             mistakes: [
@@ -1102,6 +1253,12 @@ export const BOOKS = [
           },
           {
             id: 'waved-fee-offer',
+            gym: [
+              { kind: 'gym', text: `Option A: $199 initiation + $99/mo, cancel anytime (lose the $199). Option B: waive the $199 by committing 12 months. Most choose B — instant retention. (The classic gym initiation-fee play.)` },
+              { kind: 'gym', text: `Perfect for slow-result transformations where members quit on emotion in week 3 — the fee keeps them in long enough to win.` },
+              { kind: 'app', text: `"$120 setup fee — or waived if you commit to an annual plan." Most users pick the annual commitment.` },
+              { kind: 'app', text: `Waive the onboarding/coach-matching fee for users who commit to a 12-month coaching plan.` },
+            ],
             coachNote:
               `Make staying easy and leaving expensive. Offer a real one-time fee, then let customers waive it by committing long-term — with the fee owed either way if they quit early. Most choose the commitment, giving you instant retention and cash flow. It shines for slow-to-work services where people quit on emotion.`,
             mistakes: [

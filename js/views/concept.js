@@ -2,7 +2,7 @@ import { el, svgHost, dateKey } from '../util.js';
 import { byId } from '../data/lookup.js';
 import { renderChecklist } from '../components/card.js';
 import { coverSVG } from '../components/cover.js';
-import { iconFor } from '../components/icons.js';
+import { iconFor, icon } from '../components/icons.js';
 import { nextStreak } from '../progress.js';
 import { buildConceptScript } from '../tts.js';
 
@@ -63,6 +63,17 @@ export function renderConcept({ store, tts, param }) {
     el('div', { class: 'c-sec-label' }, 'Case studies'),
     visualCards(c.cases));
 
+  // gym + gym-app playbook (emerald = physical gym, gold = gym app)
+  const gymPlays = el('div', { class: 'c-sec', 'data-seg': 10 },
+    el('div', { class: 'c-sec-label' }, 'Gym & gym-app playbook'),
+    el('div', { class: 'ex-grid' },
+      ...c.gym.map(g => el('div', { class: 'ex-card' + (g.kind === 'app' ? ' app' : '') },
+        svgHost('ex-ico', icon(g.kind === 'app' ? 'mobile' : 'fitness')),
+        el('div', { class: 'ex-text' },
+          el('span', { class: 'kind-badge' + (g.kind === 'app' ? ' app' : '') },
+            g.kind === 'app' ? 'Gym app' : 'Gym'),
+          ' ', g.text)))));
+
   // checklist
   const checked = store.get().checklists[c.id] || [];
   const checklist = renderChecklist(c.actions, checked,
@@ -117,7 +128,8 @@ export function renderConcept({ store, tts, param }) {
     cases,
     markedList('Common mistakes', c.mistakes, 'mistake-list', '✕', 8),
     markedList('By the numbers', c.stats, 'stat-list', '◆', 9),
-    el('div', { class: 'c-sec', 'data-seg': 10 },
+    gymPlays,
+    el('div', { class: 'c-sec', 'data-seg': 11 },
       el('div', { class: 'c-sec-label' }, 'Action checklist'),
       checklist),
     el('div', { class: 'note-wrap' },

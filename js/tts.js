@@ -28,6 +28,7 @@ export function buildConceptScript(c) {
     { label: 'Case studies', text: `Case studies. ${list(c.cases)}` },
     { label: 'Common mistakes', text: `Common mistakes. ${list(c.mistakes)}` },
     { label: 'By the numbers', text: `By the numbers. ${list(c.stats)}` },
+    { label: 'Gym & gym-app plays', text: `Gym and gym app plays. ${list(c.gym.map(g => g.text))}` },
     { label: 'Action checklist', text: `Action checklist. ${list(c.actions)}` },
   ];
 }

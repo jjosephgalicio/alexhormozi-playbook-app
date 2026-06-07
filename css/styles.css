@@ -308,6 +308,16 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 }
 .ex-ico svg { width: 21px; height: 21px; }
 .ex-text { padding-top: 2px; }
+
+/* gym/app distinction: emerald = physical gym, gold = gym app */
+.ex-card.app .ex-ico { color: var(--gold); background: var(--gold-soft);
+  border-color: color-mix(in srgb, var(--gold) 30%, transparent); }
+.kind-badge { display: inline-block; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); border-radius: 999px;
+  padding: 1px 7px; margin-right: 3px; white-space: nowrap; }
+.kind-badge.app { color: var(--gold); background: var(--gold-soft);
+  border-color: color-mix(in srgb, var(--gold) 35%, transparent); }
 @media (min-width: 560px) { .ex-grid { grid-template-columns: 1fr 1fr; } }
 
 /* coach's note callout */

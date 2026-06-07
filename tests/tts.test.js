@@ -5,12 +5,13 @@ import { BOOKS } from '../js/data/content.js';
 
 const sample = BOOKS[1].modules[0].concepts[0]; // money-models -> attraction -> giveaways
 
-test('script has the 11 expected ordered segments', () => {
+test('script has the 12 expected ordered segments', () => {
   const s = buildConceptScript(sample);
-  assert.equal(s.length, 11);
+  assert.equal(s.length, 12);
   assert.deepEqual(s.map(x => x.label), [
     'Overview', 'The principle', 'Why it works', 'Coach’s note', 'Story', 'Apply it',
-    'Real-world examples', 'Case studies', 'Common mistakes', 'By the numbers', 'Action checklist',
+    'Real-world examples', 'Case studies', 'Common mistakes', 'By the numbers',
+    'Gym & gym-app plays', 'Action checklist',
   ]);
 });
 
@@ -22,7 +23,8 @@ test('overview segment includes the title and hook', () => {
 test('arrows and bullets are cleaned for natural speech', () => {
   const s = buildConceptScript({
     title: 'X', hook: 'h', principle: 'p', why: 'w', coachNote: 'c', story: 's', apply: 'a',
-    examples: ['camera → lens → bag'], cases: ['one'], mistakes: ['two'], stats: ['three'], actions: ['four'],
+    examples: ['camera → lens → bag'], cases: ['one'], mistakes: ['two'], stats: ['three'],
+    gym: [{ kind: 'gym', text: 'lift heavy' }], actions: ['four'],
   });
   const ex = s.find(x => x.label === 'Real-world examples');
   assert.ok(!ex.text.includes('→'));

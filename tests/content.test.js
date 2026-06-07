@@ -60,6 +60,19 @@ test('every concept has research enrichment (coachNote, mistakes, stats, cases)'
   }
 });
 
+test('every concept has gym + gym-app plays', () => {
+  for (const c of concepts) {
+    assert.ok(Array.isArray(c.gym) && c.gym.length >= 4,
+      `${c.id}.gym needs >=4 plays, has ${c.gym?.length}`);
+    for (const g of c.gym) {
+      assert.ok(g && ['gym', 'app'].includes(g.kind), `${c.id}.gym has bad kind: ${g?.kind}`);
+      assert.ok(typeof g.text === 'string' && g.text.trim().length > 0, `${c.id}.gym empty text`);
+    }
+    assert.ok(c.gym.some(g => g.kind === 'gym'), `${c.id} needs a physical-gym play`);
+    assert.ok(c.gym.some(g => g.kind === 'app'), `${c.id} needs a gym-app play`);
+  }
+});
+
 test('every related id resolves to a real concept', () => {
   const set = new Set(ids);
   for (const c of concepts)

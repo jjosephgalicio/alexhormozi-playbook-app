@@ -18,6 +18,7 @@ const ICONS = {
   gift:     '<rect x="4" y="9" width="16" height="11" rx="1"/><path d="M3 9h18M12 9v11M12 9C9.5 9 8 5.5 9.8 4.2S13 7 12 9c-1-2 .8-4.8 2.6-3.6S15 9 12 9"/>',
   briefcase:'<rect x="3" y="8" width="18" height="11" rx="2"/><path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/>',
   spark:    '<path d="M12 4l1.6 5.4L19 11l-5.4 1.6L12 18l-1.6-5.4L5 11l5.4-1.6z"/>',
+  mobile:   '<rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/>',
 };
 
 // ordered most-specific first
