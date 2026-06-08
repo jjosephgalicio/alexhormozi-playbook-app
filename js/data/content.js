@@ -14,6 +14,8 @@
 //   actions   tickable implementation steps (becomes the checklist)
 //   related   ids of related concepts
 
+import { LEADS_BOOK } from './leads.js';
+
 export const BOOKS = [
   {
     id: 'offers',
@@ -1302,4 +1304,5 @@ export const BOOKS = [
       },
     ],
   },
+  LEADS_BOOK,
 ];

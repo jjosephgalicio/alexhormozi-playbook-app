@@ -25,6 +25,7 @@ const ASSETS = [
   './js/util.js',
   './js/tts.js',
   './js/data/content.js',
+  './js/data/leads.js',
   './js/data/lookup.js',
   './js/components/card.js',
   './js/components/cover.js',

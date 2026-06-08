@@ -1,0 +1,919 @@
+00:00 so the last one we talked about all the
+00:02 meaty stuff of how to make the ads the
+00:04 ad elements the call outs it's call to
+00:06 actions all those different things
+00:08 targeting et cetera et cetera it's like
+00:09 okay you got all that stuff in your
+00:11 brain well now how do we monetize them
+00:13 and so just to be clear there's still
+00:14 four things for the core four this is
+00:16 just part two of paid ads and I
+00:18 separated them because last parties
+00:19 probably saw it was a little bit heavy
+00:20 this one hopefully is a bit lighter all
+00:22 right so this is just the money stuff so
+00:24 we cover five things one is what matters
+00:26 most second how much to spend Third how
+00:29 to know how well you're doing fourth how
+00:30 to fix ads if you're not doing well and
+00:32 finally what I wish I knew then that I
+00:34 know now okay so let's start with what
+00:36 matters most so when it comes to
+00:38 advertising in general efficiency
+00:40 matters more than creativity all
+00:42 advertising works right so it's not
+00:43 about whether it works which is a binary
+00:45 question but how well does it work and
+00:47 that applies not just for paid ads but
+00:49 for any kind of advertising and so if I
+00:50 can shift your perspective with that one
+00:52 statement then for me that's already a
+00:54 win because if I can actually start like
+00:56 if zero people know about your stuff if
+00:58 you begin advertising more people will
+00:60 know about your stuff if more people
+01:01 know about your stuff the likely that
+01:02 you make money goes up and then the more
+01:04 you do that the higher the increase
+01:05 likely that you make money until
+01:06 eventually you do all right and that's
+01:08 the goal here so
+01:09 the only things that will differ between
+01:11 ads is how well they work and that is a
+01:14 matter of efficiency okay and so the
+01:16 thing is is with paid ads more than any
+01:17 others the return is clear as day you
+01:20 put X dollars in and you get y dollars
+01:22 out when they buy right and so in some
+01:24 of the other advertising methods like
+01:26 code Outreach or warm Outreach or making
+01:28 content sometimes the return is a little
+01:30 bit harder to see right like you can say
+01:32 okay well I have my team and my team
+01:35 cost this much and I got this many leads
+01:37 so you could calculate it that way but
+01:38 it's harder to see which one piece of
+01:40 content did really well or which one
+01:42 Outreach message which you copied 100
+01:45 times was the one that mattered right
+01:46 with paid ads it's different you can get
+01:49 laser focused on the one ad that got all
+01:51 of the return and so if you want 100
+01:53 million dollar lease machine the goal is
+01:55 not necessarily to have the best
+01:56 advertisement ever it's just to find the
+01:58 ads that are good enough to scale and
+01:60 scale the out of them
+02:02 so that is what matters most is to make
+02:04 sure that we're making more than it
+02:06 costs us to make it that's it and then
+02:08 from a benchmark perspective I may hit
+02:10 on this later but if I don't I'll tell
+02:11 you right now it's a three to one ratio
+02:13 in terms of what you make over the
+02:14 lifetime of the customer versus what it
+02:16 costs you to acquire them so if I make a
+02:18 hundred dollars in profit or say 300 in
+02:20 profit over the lifetime of a customer
+02:22 then I want to make sure that I'm
+02:23 getting that customer for less than a
+02:25 hundred dollars that's the goal now if I
+02:27 can do that sooner then even better and
+02:30 if I can break even in the first day or
+02:32 two days then I can spend my money
+02:34 machine that much faster and scale my
+02:36 ads on a one day cash conversion cycle
+02:38 rather than a 30 day or a six month
+02:40 cycle which makes much slower growth
+02:44 which enables a much slower growth cycle
+02:45 okay so number one what matters most
+02:47 that you make more than you spend all
+02:49 right student's like all right well how
+02:50 much do I spend on my ads it's one of
+02:52 the number one questions I get when we
+02:53 start talking about paid ads so let's
+02:54 dive into it
+02:55 so as I see it there are three stages to
+02:57 spending money on ads the first phase
+02:60 one is track money okay
+03:02 the second is lose money
+03:05 and I purposely put it that way because
+03:07 you have to fundamentally lose money
+03:10 before you make money when you run ads
+03:11 think about it like you have to spend
+03:13 money to get your your ads out there
+03:15 before you make money back and so you
+03:17 have to get used to losing in order to
+03:19 win and one of the crazy things about
+03:21 ads is that in general you will lose
+03:23 more times than you win but when you win
+03:26 you will win big and be able to make it
+03:29 all back and so if I make 300 ads for
+03:31 example
+03:32 maybe 295 of them will not be winners
+03:36 but there will be five that will be Roi
+03:38 positive and one of them will be a home
+03:40 run in that home run I can juice the
+03:42 hell out of and then make the return for
+03:45 all of the smaller ones that I tested
+03:46 and didn't work and that's why
+03:47 controlling the budgeting on how much
+03:49 I'm going to spend for these so that you
+03:50 can shift the return on your investment
+03:53 in your favor and so you have to get
+03:55 used to losing a lot in order to win big
+03:57 all right so phase one is you track
+03:59 money phase two is you lose money in
+04:01 phase three is you print money so let's
+04:02 break them down
+04:04 so from a tracking money perspective
+04:06 if you don't have tracking
+04:09 you don't have anything because it would
+04:11 be like going into the casino and
+04:14 placing bets without knowing what the
+04:16 odds are it's probably one of the
+04:17 fastest ways to get cleaned out right
+04:19 and so if you have no tracking on your
+04:21 platforms for how your ads are doing
+04:24 you're Flying Blind and as crazy as it
+04:27 sounds so many people run ads with no
+04:29 tracking and then wonder why they don't
+04:31 work when they can't even see what is
+04:32 working to begin with like a lot of
+04:35 times like I see multi-million dollar
+04:37 business owners are just like well I
+04:38 spend this much I make this much back
+04:39 but I don't know where it's coming from
+04:42 it is a it will unlock breathtaking
+04:45 scale if you can simply laser point down
+04:47 onto this ad works well let's make more
+04:50 of these
+04:51 so get the tracking right once you know
+04:53 that you have tracking in place so that
+04:55 when you run the ads you can see where
+04:56 they're going then you can go to phase
+04:59 two which is losing money so
+05:01 you're like why do I want to lose money
+05:03 because you have to in order to make it
+05:04 so imagine I spend a hundred dollars on
+05:06 10 ads so a thousand dollars in total
+05:08 none of them lose all hundred and then
+05:10 one of them makes 500 back for the
+05:12 hundred dollars I spent now if you look
+05:13 at that in the micro you think oh well
+05:15 paid ads don't work right or even this
+05:18 campaign didn't work well did it not
+05:20 work or did I get five to one on one and
+05:23 I got zero to one on nine okay well I'm
+05:26 down 500 but then this is where so many
+05:28 people stop then they're like well I
+05:30 can't do this anymore it's like well
+05:32 dude you found a winner and as crazy as
+05:34 it sounds like I see this happening all
+05:37 the time that's why I'm emphasizing this
+05:39 video
+05:39 this is where people stop but that's
+05:41 where you double down and even though
+05:43 you just lost money and it feels even
+05:45 more painful to take even more money out
+05:47 of your wallet and risk it again when
+05:49 you just lost 500 that's when you find
+05:51 that winning horse that one ad that's
+05:53 doing well and got you 500 back for 100
+05:55 and you spend 10 grand and then you make
+05:58 50. and then your 500 loss originally
+06:01 becomes irrelevant so the idea is that
+06:03 once you find the winner you scale it to
+06:05 such a degree that you shrink your loss
+06:07 into a relevance
+06:09 and once that happens you enter the
+06:12 print money phase right and so if you're
+06:14 making back more money than you spend
+06:16 the answer is simple spend as much as
+06:17 you possibly can and so after all if you
+06:20 had a money magic money machine that
+06:22 gave you ten dollars for one dollar you
+06:23 put into it what was your budget be
+06:25 as many dollars as you possibly can fit
+06:27 into that machine right of course
+06:29 and so the idea is more so to figure out
+06:33 how to find the winning ad and then as
+06:36 soon as you identify it because you've
+06:37 tracked it well scaling the hell out of
+06:39 that one and then you don't need to
+06:41 worry about the row as or your marketing
+06:43 budget so whenever someone's like oh we
+06:44 have a 10 000 a month marketing budget I
+06:46 already know they don't understand paid
+06:48 advertising
+06:49 think about that if they say I have this
+06:52 is my marketing budget then I already
+06:54 know they don't understand how the
+06:55 adword works or they don't know how to
+06:57 work it as well as they could because if
+06:59 we're doing it right in the ideal scene
+07:01 and uh I think I might hit on this next
+07:03 one I'm not sure but if you're doing it
+07:05 right the ideal way you should be able
+07:07 to make you put a dollar in you get a
+07:10 dollar back
+07:11 and then some and then you can take that
+07:14 extra money and buy more customers with
+07:16 it so you bought one customer and had
+07:18 some profit so then you can buy two
+07:19 customers have some profit buy four
+07:21 customers have some profit so quickly
+07:23 that it unlocks the skill that
+07:26 getting customers is no longer the
+07:28 bottleneck or the constraint in the
+07:29 business so every business I've ever
+07:31 owned getting customers has not been the
+07:33 constraint the constraint has always
+07:35 been other things which is like we need
+07:37 more sales guys or we need more delivery
+07:38 people or we need more touch-up artists
+07:40 or we need more whatever the thing is
+07:42 that comes after getting customers and I
+07:45 can promise you it's a much better way
+07:46 to live or at least a significantly less
+07:48 stressful way to live because
+07:49 fundamentally if you're not making money
+07:50 at that point then you have a wrong the
+07:52 business model is wrong and if you are
+07:53 making money at that point which you
+07:55 probably will be then you've got the
+07:56 cash flow to fix the problems and so
+07:58 once you have this skill like I said in
+07:59 the beginning of the book and begin the
+08:01 training it's a get out of jail free
+08:02 card that you can use for the rest of
+08:03 your life and paid advertising is more
+08:06 advanced simply because it has higher
+08:07 risk and you're competing with the big
+08:09 boys but there's nothing that scales
+08:11 faster than paid ads
+08:13 so once you know how much spend you have
+08:15 to figure out how well you're doing okay
+08:16 so this is going to look a little bit
+08:18 intimidating and I want you to freak out
+08:19 I use very simple numbers here but you
+08:21 got to understand this stuff so I'm
+08:23 going to break it down and just bear
+08:24 with me let's say that I have a product
+08:27 that is 15 all right that's the price
+08:29 you see the top Arrow there that's the
+08:31 price underneath of that you see the
+08:33 gross profit right which is the
+08:35 difference between the price and the
+08:37 cost which is five bucks so if I sell
+08:40 something for fifteen dollars that cost
+08:41 me five dollars then I make ten dollars
+08:43 in gross profit simple enough okay cool
+08:45 now
+08:47 if I know that the average customer buys
+08:50 this thing for me 10 times or buys for
+08:52 me once a month for 10 months doesn't
+08:53 really matter either way I know that my
+08:56 lifetime gross profit is a hundred
+08:57 dollars 10 units or 10 months times 10
+09:01 bucks of gross profit equals 100.
+09:02 everyone following with me okay that's
+09:05 point one lifetime gross profit the
+09:08 reason I talk about gross profit rather
+09:09 than lifetime value or clv depending on
+09:12 where you look is because I think the
+09:14 nomenclature can be confusing and here's
+09:17 the example that I have so a buddy of
+09:19 mine on a very big or still owns a very
+09:21 big food distribution business
+09:23 uh ready prep meals
+09:25 and
+09:26 his marketing team was coming back to
+09:28 him really excited that they were
+09:30 spending a hundred dollars to acquire a
+09:32 customer that would pay them 500 okay so
+09:35 you think wow we should scale the
+09:36 out of this
+09:37 the problem was their gross profit
+09:39 margins were 10 percent
+09:42 and so when they made 500 in Revenue
+09:44 they only made 50 in gross profit so
+09:47 they were spending a hundred dollars to
+09:48 make 50. even though the revenue the
+09:50 total price there right all of those
+09:52 together would have been 150 but we
+09:54 don't care about the total revenue
+09:55 because we have other costs associated
+09:57 with the thing we sell right and so we
+09:59 just want to look at how much margin we
+10:00 make over the lifetime of the customer
+10:02 and then compare that to what it cost us
+10:04 to make it
+10:05 it's a really important point and so
+10:07 right now if you don't know the gross
+10:08 margins of the thing you sell figure
+10:10 those out and if you don't know what
+10:11 those are you shouldn't start running
+10:13 paid ads learn those numbers first and
+10:16 then you can run these like a pro all
+10:17 right so we're going to keep with this
+10:19 simple example here so 10 months of
+10:21 purchases from a customer or 10 units
+10:23 doesn't matter ten dollars a gross
+10:25 profit per time 100 lifetime gross
+10:27 profit okay now if we want to improve
+10:31 how well we're doing between uh what it
+10:33 costs us so the CAC cost to acquire
+10:35 customer and ltgp what I just went over
+10:38 then
+10:39 we have these levers and so I have my
+10:41 little smiley face here so if ltgp is
+10:44 greater than CAC it means we're making
+10:45 money smiley face if ltgp is lower than
+10:49 CAC then it means we're losing money
+10:52 sad face I'm supposed to unsmiley Face
+10:55 um now if ltgp divided by CAC is greater
+10:59 than 3
+11:01 then you have a home run you have
+11:04 something that you can scale to the moon
+11:05 and that's just again my experience on
+11:07 this okay so if you see that ratio
+11:09 between what it cost you to make money
+11:11 and the money they make then you can
+11:13 improve that ratio so if we want to
+11:15 decrease CAC or make CAC lower that
+11:18 means we get cheaper customers we do
+11:19 this with more efficient ads following
+11:21 the steps we outlined earlier all right
+11:23 that means making better ads getting
+11:24 better at targeting eliminating steps in
+11:26 the process getting better at taking
+11:28 sales
+11:30 improving split tests on the landing
+11:32 pages etc those are all things that will
+11:34 decrease the cost to a Car customer
+11:35 finding cheaper platforms finding media
+11:37 uh types that get distributed more
+11:39 widely all of these things like there's
+11:41 a hundred things a million things that
+11:43 can decrease the cost to a Car customer
+11:44 but fundamentally that's all you're
+11:46 going to do to decrease CAC and improve
+11:48 that ratio on the flip side
+11:50 you can make ltgp higher you can
+11:52 increase it we increase how much we make
+11:54 per customer and we do this with a
+11:56 better business model it's one of the
+11:57 biggest mistakes that people make is
+11:59 that they think they're advertising when
+11:60 it doesn't work when in reality their
+12:02 business model is broken and so in a lot
+12:03 of ways advertising can show you how you
+12:06 measure up compared to your competition
+12:08 and so one of the things that I will
+12:09 share with you
+12:10 um that was surprising to me is that
+12:12 when we had Alan which is a software
+12:14 that that helps agencies acquire
+12:15 customers for their their small
+12:17 businesses underneath of them we saw
+12:19 metrics across industries of how much it
+12:22 costs these agencies to acquire their
+12:23 small business owners now what you might
+12:25 be surprised about
+12:27 is that the cost to acquire customers
+12:29 within the same industry was almost
+12:32 always within one to three acts of one
+12:35 another so basically you have a 3X lever
+12:38 on being amazing at marketing right for
+12:40 the most part with paid ads without a
+12:42 brand without a brand big big shining
+12:46 big asterisk without a brand but if
+12:48 you're just running paid ads which is
+12:50 what I'm talking about for right now
+12:50 like the Costco car customer wasn't it
+12:53 wasn't that big but the big difference
+12:55 between the guys who are crushing and
+12:57 the guys who weren't were the guys
+12:59 who were crushing it were making 10
+13:01 times more per customer and so I'll tell
+13:03 you a quick story so when I was uh early
+13:06 like years ago probably five years ago I
+13:09 um I had a guy reach out to me who was
+13:11 in the same space he was selling I we
+13:13 obviously worked with gym owners he
+13:14 worked with uh personal trainers Fitness
+13:16 professionals but similar airspace
+13:19 and so uh he showed me his numbers and
+13:21 believe it or not his sales velocity in
+13:23 terms of the number of sales per month
+13:24 he was making then the sales month we
+13:26 were making was about the same
+13:28 but here's the crazy part we made 56
+13:30 times more profit than he did
+13:32 56 times more profit with the exact same
+13:35 number of sales
+13:36 and so
+13:38 he came to me thinking that he had a
+13:39 sales and marketing problem but the real
+13:41 problem was that he wasn't making enough
+13:43 per customer and it was because he
+13:45 wasn't really that good for being real
+13:47 and so because he could not provide
+13:49 value sufficiently to his customers he
+13:51 couldn't charge a sufficient amount and
+13:53 so he could promise all this stuff and
+13:54 sell people at the same rate and same
+13:56 cost roughly that I was we just made 10
+13:59 times more than he did but in gross
+14:01 profit or net profit at the end of the
+14:02 year it ended up being 50 plus times
+14:04 more money and that is ultimately will
+14:07 separate separate the best advertised
+14:09 from the worst isn't even the
+14:10 advertising itself you just need to be
+14:12 good enough to get people in and then
+14:14 let the business model take care of the
+14:15 rest
+14:19 and so fundamentally if you want to
+14:21 improve how well you were doing you can
+14:23 focus on decreasing the cost to acquire
+14:25 or you can focusing on increasingly
+14:27 lifetime gross profit per customer in my
+14:28 opinion I like doing both but where you
+14:31 get a lot of gains unless you have a
+14:33 massive brand which can drive the CAC to
+14:35 almost zero
+14:37 the business model itself is going to be
+14:39 the thing that will ultimately drive
+14:40 because you can go infinitely high like
+14:43 if somebody else is competing against
+14:44 you and they can only spend five
+14:44 thousand dollars and you can spend 50
+14:45 you can crush them everywhere and in a
+14:48 weird way it's almost like making an
+14:49 ethical Monopoly if you can outspend
+14:51 everyone else to acquire a customer then
+14:53 you can literally price everyone else
+14:54 out of the market because most paid ads
+14:56 are based on an auction so the platforms
+14:58 will auction the eyeballs off to the
+15:00 highest bidder and so you can set your
+15:01 bids higher than anyone else can in your
+15:03 space and then drive up the cpms so that
+15:06 means you purposely increase your cost
+15:07 to acquire customer so that no one else
+15:10 can
+15:11 and that is how you can take over an
+15:13 entire Market that's fundamentally what
+15:14 we've done for years now on the gym
+15:16 launch side and I'm explaining this to
+15:17 you I'm showing you behind the curtain
+15:18 because like that's how you can Crush if
+15:20 you learn this stuff
+15:21 so it's funny because again like I don't
+15:24 talk much about paid ads but like this
+15:25 is how I've made the majority of my
+15:27 wealth so
+15:28 that's how you do how you know how well
+15:30 you're doing
+15:31 and how you know that you're you need to
+15:32 make sure you're doing at least three to
+15:33 one and just for context I've said this
+15:35 at the beginning but like my lifetime
+15:36 return is over 36 to one
+15:38 um and so there's you can go way higher
+15:40 than three and if I'm being candid which
+15:42 I will be I try and Target ten to one
+15:44 minimum for the portfolio companies that
+15:46 we own some of our best ones are 20 20
+15:48 plus to one which is great now let's go
+15:51 into number four how to fix ads so okay
+15:54 you started running ads it's not working
+15:55 as well as you'd hoped
+15:56 so for many businesses ltgb is bigger
+15:59 than CAC but not after the first
+16:00 purchase boo right that sucks the
+16:03 profits from the customer's first
+16:05 purchase often less than the cost to get
+16:06 them that means that it can take many
+16:08 months to collect the full ltgp so you
+16:11 get your money later instead of now and
+16:13 this creates a cash flow problem and
+16:14 this cripples your ability to scale okay
+16:16 so let's take back to the earlier
+16:18 example I showed but if your customer
+16:20 spends more than it costs you to get and
+16:22 fulfill them in the first 30 days then
+16:23 you have to funds to scale now and
+16:25 forever and I call this client findings
+16:27 to acquisition so let's say that we have
+16:29 a 15 per month membership which we said
+16:31 earlier it cost us five dollars liver so
+16:33 it leaves us ten dollars in gross profit
+16:34 left over everyone's following and let's
+16:36 say our average number says 10 months
+16:37 that makes our lifetime gross profit a
+16:38 hundred dollars again just restating for
+16:40 for Simplicity if the cost to get a
+16:42 customer is thirty dollars then we have
+16:45 a three point three to one lgp to CAC
+16:48 ratio so we're over three good news
+16:50 our eyes make money hooray but there's a
+16:53 problem it's going to take us three
+16:55 months to break even so think about this
+16:57 so you spend 30 so you can see the cost
+16:59 line we've got plus 10 on gross profit
+17:01 it took us thirty dollars to get it and
+17:04 so we're negative 20. so we're still out
+17:05 20 bucks was it a good ad yes but are we
+17:09 down money also yes and then next month
+17:11 that customer buys another ten dollars
+17:13 now it didn't cost us anything so now
+17:15 we're down 10. and then the next month
+17:17 they'd buy again for ten dollars didn't
+17:19 cost us anything and now we're down zero
+17:21 so break even on that third month or
+17:23 that third transaction right and so on
+17:25 that fourth transaction because I said
+17:26 zero at the top but on the fourth
+17:28 transaction we're plus 10 we're finally
+17:30 in we're finally in the black we're cash
+17:32 flow positive so that means that you
+17:33 have a long conversion cycle for your
+17:35 cash so you put cash out you got to wait
+17:36 three or four months before you get the
+17:37 cash back which means that you're
+17:39 limited by that amount of cash you can
+17:41 spend and then wait to recoup it right
+17:43 no bueno not as fun you can do it in
+17:46 many many businesses do it this way but
+17:48 the only way to do this game is that you
+17:51 take on debt
+17:52 you sell Equity meaning investors give
+17:55 you money and you basically use their
+17:56 savings or you use your own savings but
+17:59 you have to front the money in some way
+17:60 because it's not coming back and so the
+18:02 ways that I've scaled each of my
+18:03 companies without needing outside
+18:04 Capital to scale it or taking on debt in
+18:07 order to get where I wanted to go was a
+18:09 new way all right
+18:11 and so let's say in that same example I
+18:13 figure out a hundred dollar upsell that
+18:15 I get 20 of people to take okay so
+18:18 whatever the thing is 15 bucks a month
+18:20 and I have a hundred dollar one-time
+18:22 upsell uh that I offer to people and
+18:24 only one out of five people take it it's
+18:26 not a huge deal it's only for premium
+18:27 people who want some unique experience
+18:29 that's great awesome well if 20 of
+18:32 people take a hundred dollar gross
+18:33 profit thing then I make 20 bucks extra
+18:35 per person but here's the magic of what
+18:37 happens if I make that twenty dollars up
+18:39 front then I get my ten dollars I
+18:41 originally have for my membership
+18:43 and the twenty dollars because it's
+18:45 twenty percent of a hundred so one out
+18:46 of five twenty dollars and now my thirty
+18:49 dollars that I spent to acquire the
+18:51 customer is canceled out
+18:52 which means I can then take that money
+18:54 back
+18:55 and spend it again and get another
+18:56 customer and keep recycling the play and
+18:59 then compounding over and over and over
+19:00 again it's rather than waiting three
+19:01 months
+19:02 I confront the money on a credit card
+19:04 pay the card off and do it again I can
+19:06 do this entire thing without taking any
+19:07 outside money on
+19:09 and that's what we're going after which
+19:11 is client Finance acquisition and that's
+19:12 the term I use because your clients
+19:13 Finance the acquisition of other
+19:16 customers
+19:17 and that creates a cash flow positive
+19:19 business day one and so rather than
+19:22 think okay I'm over three to one
+19:24 that is like tier one of level of
+19:27 advertising what I would want you to get
+19:28 the next tier above that is client
+19:31 Finance acquisition where you're
+19:33 breaking even or better or better within
+19:36 the first 30 days because what happens
+19:37 is and I have this more in the money
+19:39 models uh training
+19:41 if you can get two to one in the first
+19:43 30 days or three to one in the first 30
+19:45 days
+19:46 then what happens is you actually
+19:48 compound at that multiple so it goes two
+19:52 times four times eight times sixteen
+19:54 times thirty two times and now we're
+19:55 only five months in by the end of the
+19:57 year you have four thousand times the
+19:59 amount of customers you did in the
+19:60 beginning if you continue to reinvest
+20:01 every single month
+20:03 and that is how you scale and
+20:05 realistically you would probably hit a
+20:06 different constraint but my whole point
+20:08 of this whole training is to remove
+20:10 getting leads as a bottleneck in the
+20:11 business and this accomplishes that okay
+20:13 and so that was the fix I just outlined
+20:16 I have 100 upsell 20 of the people take
+20:18 it 20 bucks on average increases it I
+20:21 break even and then we get free
+20:23 customers and then here's the cool part
+20:24 is that we still make the money every
+20:27 month after that that was coming in
+20:29 before but now it's just going straight
+20:30 into our pocket now we created a money
+20:32 printing machine and that's the goal
+20:34 so that's how you fix these things with
+20:36 client findings and acquisition and
+20:38 again that requires Innovation you just
+20:40 have to think what else do these people
+20:41 need and so just like you made a lead
+20:43 magnet that would lead naturally to your
+20:45 core offer where you can create another
+20:46 upsell that your core offer leads
+20:48 naturally to it can just be a
+20:49 never-ending cycle well there's also
+20:51 this other thing that you might want or
+20:52 might need and the easiest upsells in
+20:54 the world before I this will be a tiny
+20:56 tangent but you'll like it is that you
+20:58 can sell more of what you just offered
+21:00 them you can sell better of what you
+21:02 just offered them those are the easiest
+21:04 upsells that you can add in you can also
+21:05 sell new or different something that's
+21:07 complementary so you can sell fries with
+21:09 a Coke right you can sell a burger and
+21:11 then add in fries or add in a Coke and
+21:13 then each of those you can upsize you
+21:14 can super size them you can supersize
+21:16 your fries super size your Coke and so
+21:17 that's more it's better and then if you
+21:19 had the better version of coke you say
+21:21 well do you want organic Coke
+21:23 so each of those when you're thinking
+21:24 through how you can add something in
+21:25 more better new is a nice framework for
+21:27 adding stuff in now I'm not going to go
+21:29 more on that because that's a whole
+21:30 other book but if you need to add
+21:32 something there just get creative and
+21:33 think what else did this person want and
+21:35 one of the easiest things to do is just
+21:36 ask them if you don't know and you need
+21:38 to sell more stuff just ask them what
+21:39 else can I do to make this easier for
+21:40 you and then sell that
+21:43 so let's go over what I wish I knew
+21:46 number one is don't confuse sales
+21:47 problems with advertising problems so we
+21:48 actually had a company that was
+21:50 struggling with this for a really long
+21:51 time basically they uh they scaled their
+21:54 advertising and we fixed problem after
+21:55 problem and so it was like first the ads
+21:57 weren't working so we weren't getting
+21:58 clicks and then the the targeting wasn't
+22:01 working so we were getting the right
+22:02 people and then once we started getting
+22:03 the right people seeing the right ads we
+22:05 were getting them uh to schedule but
+22:07 then they weren't showing up so we fixed
+22:08 that problem and we got the right people
+22:09 on the phone so the right Avatar and
+22:11 they had all these people showing up and
+22:12 then they weren't closing they're like
+22:14 this advertising is working
+22:16 if you're getting the right people on
+22:18 the phone
+22:19 you don't have an advertising problem
+22:20 you have a sales problem
+22:22 and so you want to make sure and uh and
+22:25 the founder of the company was
+22:26 continually it's the ads it's like it
+22:27 wasn't the ads it was they didn't know
+22:29 how to close right and so we want to
+22:31 make sure that the problem we're solving
+22:32 is the correct problem of the business
+22:34 and so I just want to emphasize this and
+22:36 so we uh you know we spent 12 we spent
+22:38 150 000 in ads
+22:39 um but they uh they actually threw in
+22:42 the towel so I'll just give you the real
+22:43 and they just want to continue doing
+22:44 what they were doing which was really
+22:46 frustrating for me but about six inches
+22:47 from gold uh they just they couldn't
+22:49 stomach the the loss of uh the 150 000
+22:53 but here's what's crazy
+22:55 is that if they had continued
+22:57 as soon as they added the second huge
+22:59 stream of acquisition to their business
+23:01 they realistically would have added a 30
+23:03 million dollar bonus to their price tag
+23:05 in terms of their Enterprise Value so
+23:07 think about the return on that so if you
+23:09 spent a hundred thousand dollars you
+23:10 spent 200 000 spend a million dollars in
+23:12 a year testing to finally figure out a
+23:15 new entire acquisition channel for your
+23:16 business and then that that separate
+23:19 acquisition Channel makes your business
+23:21 five times more valuable
+23:23 was it worth it I can't think of many
+23:26 things that are more valuable than doing
+23:27 that and so like the cost is still
+23:30 nothing it's a pittance compared to the
+23:32 return you get on it on a macro level
+23:33 not even including the money you make
+23:35 from the actual advertising
+23:37 number two is that your best free
+23:39 content can make the best ads I'm
+23:40 repeating this because I think it's
+23:42 really important and also user generated
+23:44 content so ugc if you've ever seen that
+23:46 if you can create a system where you
+23:48 encourage your customers to consistently
+23:50 make you testimonials and leave you
+23:52 videos or unpackaging videos of them
+23:55 using your product or services
+23:57 when you create a machine around that
+23:58 then you can basically plug that machine
+24:00 the output of all those customers
+24:02 directly into ads and then you create
+24:05 this cycle of lots of customers see
+24:07 customer ads they then make new videos
+24:09 which then get run as ads which then
+24:11 make more videos and you create this
+24:12 flywheel effect
+24:13 and the whole time you're stepped out of
+24:15 the entire process and just collecting
+24:17 your checks from pumping all of these
+24:19 videos
+24:20 and as an aside to to wrap this point up
+24:25 the best some of the best ads ever made
+24:26 were actually videos that weren't
+24:28 intended to be ads they were just videos
+24:29 that I had made that were high quality
+24:30 content that got shared all over the
+24:31 place and I was like oh maybe I should
+24:32 make this an ad and the thing is when
+24:34 you make an ad out of a video that the
+24:37 platform already likes because a lot of
+24:40 people are sharing it guess what they do
+24:41 they show it to even more people
+24:43 so you actually get a double win
+24:47 number three if you say you suck at
+24:49 something you will probably suck at it
+24:50 don't say I am not techy or I hate Tech
+24:53 stuff it just keeps you poorer than you
+24:55 should be and I said it for weight four
+24:57 years all right and then one day I
+24:58 snapped out of it because I hated my
+24:60 website designer more than I hated Tech
+25:01 itself I was like if I have to talk to
+25:02 this guy again I was like if this idiot
+25:04 can do it so can I and so four years
+25:05 wasting time and lost money reversed
+25:07 with four hours of concentrated effort
+25:08 so please just like get over it and if
+25:10 you're older especially like the tools
+25:12 they have nowadays are so easy people
+25:14 who don't speak English can do it all
+25:16 right anyone can figure it out all right
+25:18 so it's your turn so this is a paid ass
+25:20 checklist so number one this is again
+25:21 who this is the last of the core four of
+25:23 the ways you can advertise to let
+25:25 strangers know about the stuff you sell
+25:26 so this is you or your advertising is
+25:28 your offer or your lead magnet where any
+25:30 platform that your audience that you can
+25:32 buy access to your audience on uh to
+25:35 whom is the target audience or lookalike
+25:36 audience that you can sift through and
+25:37 add filters and interests when every day
+25:39 seven days a week why get engaged leads
+25:42 to sell how is you're gonna do your call
+25:44 out the three W's which is the value
+25:46 call to action how much you have your
+25:49 learning budget which is track lose
+25:50 money then print money
+25:52 and as an aside there if you know how
+25:55 many sales you can handle then you can
+25:57 reverse that into your budget until you
+25:59 fix your constraint so if I know that I
+26:01 can only handle 20 new customers a month
+26:03 and I know my average cost to a Car
+26:04 customer is a hundred dollars then I
+26:07 know that my budget is going to be two
+26:09 thousand dollars a month and so I can
+26:10 divide that out per day and say okay 30
+26:12 days so 70 bucks a day roughly is going
+26:14 to be my budget per day now the budget
+26:17 that I'm putting there is not a
+26:18 constraint because of my advertising but
+26:22 because of my delivery but then I can
+26:24 focus on my folk all my effort on my
+26:26 delivery to deconstrain that and then I
+26:28 can crank this up again
+26:30 so you can reverse engineer to a sales
+26:32 goal which is how I do it if I have
+26:33 other constraints
+26:35 um how many I recommend doing 30 hooks
+26:39 for 10 pieces of valuable content and
+26:42 that'll give you 300 different
+26:43 variations that you can spend very small
+26:44 budgets on to test and quickly win and
+26:47 then scale the ones that that are doing
+26:48 well which you can only do if you track
+26:50 and then finally how long do you do this
+26:52 for as long as it takes because if you
+26:54 decide that you like if someone else can
+26:56 run paid ads in your industry you can
+26:59 run paid ads in your industry it's just
+27:01 a skill and guess how they learned it
+27:02 trial and error like I'm telling you
+27:05 like I lose so many times when I run
+27:07 paid ads and it's frustrating for me
+27:08 because
+27:09 I've been doing this a long time and it
+27:11 still sometimes takes three months six
+27:12 months to get it to really crank all the
+27:14 way through from The Click all the way
+27:15 to the close because each time you have
+27:17 to fix some little element of it to make
+27:19 it work and I really think it's the
+27:21 expectation that it's going to happen
+27:22 overnight that kills way more people who
+27:24 would otherwise be exceptional
+27:25 advertisers so if you can if you can
+27:27 just accept the fact that this is your
+27:29 learning budget
+27:30 I think you will
+27:32 you will do a lot better and so I had
+27:34 that little learning budget when it says
+27:36 how much
+27:37 um and it was referencing a longer story
+27:38 they had in the book and I'll give you
+27:39 the the smaller version of it now which
+27:41 is
+27:44 if you're doing the other advertising
+27:45 methods you're posting content you're
+27:47 doing Outreach warmer code of any kind
+27:49 you should be making a little bit of
+27:51 extra money you should also know a
+27:52 little bit more about your avatar a
+27:53 little bit more about your customers
+27:54 should know how they talk how they
+27:56 identify with themselves and that gives
+27:57 you data so that you can be more likely
+27:59 to be successful earlier on with the
+28:01 paid ads which is why I recommend doing
+28:02 it last you also should have enough cash
+28:04 flow from those sales to be able to
+28:07 spend knowing that you're not going to
+28:09 immediately make the money back
+28:10 to learn
+28:11 and so you can take that excess cash
+28:13 flow and put it in there you can give
+28:14 yourself a learning budget which is a
+28:16 reverse way of doing it which is I
+28:18 expect to lose a thousand dollars a
+28:19 month until all of a sudden it will
+28:21 click and then it will Skyrocket and
+28:23 that's usually how it is so you
+28:24 basically like lose money lose money
+28:26 lose money lose money and then it
+28:27 crushes and then you figure it out and
+28:29 so that money that you spend on
+28:32 Advertising oftentimes will be some of
+28:34 the highest return money you do it's
+28:35 just you have to look over a longer
+28:37 Horizon like that business owner who
+28:38 spent 150 Grand and decided not to keep
+28:40 going citizens from gold when he had a
+28:42 30 million dollar Enterprise Value boost
+28:44 that he would have unlocked
+28:45 like you have an Enterprise Value boost
+28:47 that you unlock you just got to be
+28:49 willing to pay the price tag
+28:51 and so that's what I wish I knew when I
+28:53 started running paid ads
+28:54 and so that concludes the fourth of the
+28:57 core four for advertising which is paid
+29:00 ads now we're going to talk about how to
+29:03 put all four of those on steroids

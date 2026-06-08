@@ -11,6 +11,11 @@ export const MODULE_THEMES = {
   upsell:      { c1: '#243A6B', c2: '#8AA0DC', motif: 'rise',  label: 'Upsell' },
   downsell:    { c1: '#2F5552', c2: '#8FB0A9', motif: 'fall',  label: 'Downsell' },
   continuity:  { c1: '#2C4A24', c2: '#9BBC74', motif: 'loop',  label: 'Continuity' },
+  // $100M Leads
+  'leads-understanding': { c1: '#1F5C8B', c2: '#82B2D6', motif: 'rings', label: 'Understanding' },
+  'lead-magnets':        { c1: '#8E2F5A', c2: '#CF8BAC', motif: 'burst', label: 'Lead Magnets' },
+  'core-four':           { c1: '#176C72', c2: '#77C3C7', motif: 'stack', label: 'The Core Four' },
+  'lead-getters':        { c1: '#9C6B1E', c2: '#E2B86E', motif: 'rise',  label: 'Lead Getters' },
 };
 
 const FALLBACK = { c1: '#3A4A57', c2: '#9FB0BC', motif: 'arcs', label: '' };

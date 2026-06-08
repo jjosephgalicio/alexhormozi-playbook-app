@@ -186,6 +186,44 @@ function timeline(segs) {
   return s;
 }
 
+// N boxes left-to-right joined by arrows (optionally highlight one)
+function flow(labels, hl = -1) {
+  const n = labels.length, w = 80, gap = (300 - n * w) / (n + 1), y = 46, h = 48;
+  let s = '';
+  labels.forEach((l, i) => {
+    const x = gap + i * (w + gap);
+    s += box(x, y, w, h, l, 'dgbox' + (i === hl ? ' a' : ''));
+    if (i < n - 1) s += arrowR(x + w + 2, y + h / 2, gap - 4, 'stroke a', 'af');
+  });
+  return s;
+}
+
+// 2x2 matrix (warm/cold × one-to-one/one-to-many) for the Core Four
+function quad() {
+  const x = 80, y = 32, w = 100, h = 42, g = 8;
+  const P = [[x, y], [x + w + g, y], [x, y + h + g], [x + w + g, y + h + g]];
+  const L = [['Warm outreach', 'dgbox a'], ['Cold outreach', 'dgbox'],
+    ['Post content', 'dgbox'], ['Paid ads', 'dgbox']];
+  let s = '';
+  L.forEach((l, i) => { s += box(P[i][0], P[i][1], w, h, l[0], l[1]); });
+  s += text(x + w / 2, y - 9, 'WARM', 'sa') + text(x + w + g + w / 2, y - 9, 'COLD', 's');
+  s += textL(6, y + h / 2 + 4, '1-to-1', 's') + textL(6, y + h + g + h / 2 + 4, '1-many', 's');
+  return s;
+}
+
+// one node fanning out to N (one-to-many / multipliers)
+function branch(center, items) {
+  const cw = 88, cx = 8, midY = 70;
+  let s = box(cx, midY - 26, cw, 52, center, 'dgbox a');
+  const n = items.length, ih = 22, gp = 8, total = n * ih + (n - 1) * gp, start = midY - total / 2;
+  items.forEach((it, i) => {
+    const cy = start + ih / 2 + i * (ih + gp);
+    s += `<line x1="${cx + cw}" y1="${midY}" x2="200" y2="${cy}" class="stroke a"/>`;
+    s += box(202, cy - ih / 2, 88, ih, it, 'dgbox');
+  });
+  return s;
+}
+
 // ---- concept -> diagram --------------------------------------------------
 
 const DIAGRAMS = {
@@ -215,6 +253,25 @@ const DIAGRAMS = {
   'bonus-offer': () => stack('Membership', ['+ bonus', '+ bonus', '+ bonus']),
   'continuity-discount': () => timeline([{ label: 'FREE', cls: 'dgbox g' }, { label: '$' }, { label: '$' }, { label: '$' }, { label: '$' }]),
   'waved-fee-offer': () => compareBoxes('A: pay fee', 'quit = lose it', 'B: commit', 'fee waived', 'right'),
+
+  // $100M Leads
+  'engaged-leads': () => compareBoxes('Lead', 'contact info', 'Engaged', 'wants it', 'right'),
+  'promote-or-die': () => flow(['Product', 'Promotion', 'Customers'], 1),
+  'lead-magnet': () => flow(['Free win', 'Reveals B', 'Your offer'], 2),
+  'lm-uncover-problem': () => flow(['Free audit', 'Find issue', 'Your fix'], 1),
+  'lm-free-sample': () => compareBoxes('Sample', 'a taste', 'Full product', 'the rest', 'right'),
+  'lm-first-step': () => flow(['Step 1 free', 'Step 2', 'Step 3'], 0),
+  'give-away-secrets': () => bars([{ label: 'Free magnet', sub: 'value', h: 94, cls: 'a' }, { label: 'Paid product', sub: 'value', h: 62 }]),
+  'core-four': quad,
+  'warm-outreach': () => flow(['Reconnect', 'Build trust', 'Soft offer'], 2),
+  'post-content': () => branch('1 post', ['reach', 'reach', 'reach', 'reach']),
+  'cold-outreach': () => funnel('100 messages', 'a few leads'),
+  'paid-ads': () => flow(['Call out', 'Value', 'CTA'], 2),
+  'lead-getters': () => branch('You', ['Customers', 'Affiliates', 'Employees', 'Agencies']),
+  'referrals': () => branch('Customer', ['friend', 'friend', 'friend']),
+  'affiliates': () => flow(['Affiliate', 'Audience', 'Your leads'], 2),
+  'employees': () => branch('Your team', ['lead', 'lead', 'lead']),
+  'agencies': () => flow(['Agency', 'Runs ads', 'Leads'], 2),
 };
 
 export function diagramSVG(conceptId) {
