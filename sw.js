@@ -9,7 +9,7 @@
 // long-lived max-age from a previous deploy. skipWaiting + clients.claim activate a new
 // worker immediately; the page reloads itself on controllerchange (see app.js).
 
-const CACHE = 'hpb-v4';
+const CACHE = 'hpb-v5';
 const TIMEOUT = 3500;
 
 const ASSETS = [
@@ -26,6 +26,18 @@ const ASSETS = [
   './js/tts.js',
   './js/data/content.js',
   './js/data/leads.js',
+  './js/data/leads-deep.js',
+  './js/data/deep/ldx-context.js',
+  './js/data/deep/ldx-problem.js',
+  './js/data/deep/ldx-mbn.js',
+  './js/data/deep/ldx-leadmagnet.js',
+  './js/data/deep/ldx-first5.js',
+  './js/data/deep/ldx-content1.js',
+  './js/data/deep/ldx-content2.js',
+  './js/data/deep/ldx-cold.js',
+  './js/data/deep/ldx-ads1.js',
+  './js/data/deep/ldx-ads2.js',
+  './js/data/deep/ldx-employees.js',
   './js/data/lookup.js',
   './js/components/card.js',
   './js/components/cover.js',

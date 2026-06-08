@@ -16,6 +16,18 @@ export const MODULE_THEMES = {
   'lead-magnets':        { c1: '#8E2F5A', c2: '#CF8BAC', motif: 'burst', label: 'Lead Magnets' },
   'core-four':           { c1: '#176C72', c2: '#77C3C7', motif: 'stack', label: 'The Core Four' },
   'lead-getters':        { c1: '#9C6B1E', c2: '#E2B86E', motif: 'rise',  label: 'Lead Getters' },
+  // $100M Leads · In Depth
+  'ldx-context':    { c1: '#34507A', c2: '#8FA6CC', motif: 'rings', label: 'Context' },
+  'ldx-problem':    { c1: '#9A3B2A', c2: '#DB917A', motif: 'burst', label: 'The Problem' },
+  'ldx-mbn':        { c1: '#1C6E64', c2: '#7FBCB2', motif: 'rise',  label: 'More Better New' },
+  'ldx-leadmagnet': { c1: '#8E2F5A', c2: '#CF8BAC', motif: 'burst', label: 'Lead Magnets' },
+  'ldx-first5':     { c1: '#9C6B1E', c2: '#E2B86E', motif: 'arcs',  label: 'First 5 Clients' },
+  'ldx-content1':   { c1: '#3A3A7A', c2: '#9494D6', motif: 'stack', label: 'Content I' },
+  'ldx-content2':   { c1: '#5A2A72', c2: '#AE92C4', motif: 'stack', label: 'Content II' },
+  'ldx-cold':       { c1: '#2E5A6E', c2: '#88AEBC', motif: 'fall',  label: 'Cold Outreach' },
+  'ldx-ads1':       { c1: '#3A6B2E', c2: '#9BBC74', motif: 'bars',  label: 'Paid Ads I' },
+  'ldx-ads2':       { c1: '#6B6326', c2: '#C6BC72', motif: 'bars',  label: 'Paid Ads II' },
+  'ldx-employees':  { c1: '#7A4A2A', c2: '#CC9E74', motif: 'loop',  label: 'Employees' },
 };
 
 const FALLBACK = { c1: '#3A4A57', c2: '#9FB0BC', motif: 'arcs', label: '' };

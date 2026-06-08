@@ -5,15 +5,21 @@
 // Canvas is 300 x 140. Reusable primitives compose into per-concept compositions,
 // which are mapped in DIAGRAMS at the bottom.
 
-const text = (x, y, str, cls = '') =>
-  `<text x="${x}" y="${y}" text-anchor="middle" class="${cls}">${str}</text>`;
+const text = (x, y, str, cls = '', fs) =>
+  `<text x="${x}" y="${y}" text-anchor="middle" class="${cls}"${fs ? ` font-size="${fs}"` : ''}>${str}</text>`;
 const textL = (x, y, str, cls = '') =>
   `<text x="${x}" y="${y}" text-anchor="start" class="${cls}">${str}</text>`;
 
+// shrink a label's font so it fits within a box of width w (keeps short labels at base)
+function fitFont(label, w, base = 12) {
+  const inner = w - 14, perChar = 0.56;
+  return Math.round(Math.max(7, Math.min(base, inner / (String(label).length * perChar))) * 10) / 10;
+}
+
 function box(x, y, w, h, label, cls = 'dgbox', sub = '') {
   let s = `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="8" class="${cls}"/>`;
-  if (label) s += text(x + w / 2, y + h / 2 + (sub ? -2 : 4), label);
-  if (sub) s += text(x + w / 2, y + h / 2 + 13, sub, 's');
+  if (label) s += text(x + w / 2, y + h / 2 + (sub ? -2 : 4), label, '', fitFont(label, w));
+  if (sub) s += text(x + w / 2, y + h / 2 + 13, sub, 's', fitFont(sub, w, 10));
   return s;
 }
 
@@ -278,4 +284,49 @@ export function diagramSVG(conceptId) {
   const fn = DIAGRAMS[conceptId];
   if (!fn) return '';
   return `<svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${fn()}</svg>`;
+}
+
+// Data-driven diagram: render from a concept's `diagram` spec object (used by the
+// In-Depth book). Labels are clipped to keep them inside the boxes; box() font-fits.
+const clip = (s, n = 14) => {
+  s = String(s == null ? '' : s);
+  return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s;
+};
+
+export function diagramSpecSVG(spec) {
+  if (!spec || !spec.type) return '';
+  let inner = '';
+  switch (spec.type) {
+    case 'flow':
+      inner = flow((spec.labels || []).map(l => clip(l)), spec.hl ?? -1);
+      break;
+    case 'compare':
+      inner = compareBoxes(clip(spec.left), clip(spec.leftSub, 16), clip(spec.right), clip(spec.rightSub, 16), spec.hl || 'right');
+      break;
+    case 'bars': {
+      const items = (spec.items || []).slice(0, 4);
+      inner = bars(items.map(it => ({
+        label: clip(it.label, 11),
+        sub: (items.length <= 2 && it.sub) ? clip(it.sub, 14) : '',
+        h: it.big ? 94 : 52,
+        cls: it.big ? 'a' : '',
+      })));
+      break;
+    }
+    case 'branch':
+      inner = branch(clip(spec.center, 12), (spec.items || []).slice(0, 4).map(i => clip(i, 13)));
+      break;
+    case 'funnel':
+      inner = funnel(clip(spec.top, 16), clip(spec.bottom, 12));
+      break;
+    case 'cycle':
+      inner = cycle((spec.labels || []).slice(0, 3).map(l => clip(l, 12)));
+      break;
+    case 'stack':
+      inner = stack(clip(spec.base, 16), (spec.items || []).slice(0, 4).map(i => clip(i)));
+      break;
+    default:
+      return '';
+  }
+  return `<svg viewBox="0 0 300 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">${inner}</svg>`;
 }

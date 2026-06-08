@@ -15,6 +15,7 @@
 //   related   ids of related concepts
 
 import { LEADS_BOOK } from './leads.js';
+import { LEADS_DEEP_BOOK } from './leads-deep.js';
 
 export const BOOKS = [
   {
@@ -1305,4 +1306,5 @@ export const BOOKS = [
     ],
   },
   LEADS_BOOK,
+  LEADS_DEEP_BOOK,
 ];
