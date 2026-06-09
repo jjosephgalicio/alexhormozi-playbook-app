@@ -156,7 +156,9 @@ export function createTTS(store) {
       const u = new SpeechSynthesisUtterance(chunks[ci++]);
       applyVoice(u);
       u.onend = () => { if (myGen === gen) next(); };
-      u.onerror = () => { if (myGen === gen) next(); };
+      // defer error-retry off the stack: if speak() fails synchronously (e.g. no voice
+      // available), a synchronous onerror -> next chain would recurse and overflow.
+      u.onerror = () => { if (myGen === gen) queueMicrotask(next); };
       try { synth.speak(u); } catch {}
     };
     next();
@@ -200,6 +202,21 @@ export function createTTS(store) {
     speakSegment();
   }
 
+  // jump to a whole track (concept) in the playlist
+  function goToItem(idx) {
+    if (!state.items.length || idx < 0 || idx >= state.items.length) return;
+    state.i = idx; state.seg = 0; state.playing = true; state.paused = false;
+    startKeepAlive();
+    if (onAdvance) onAdvance(state.items[idx].conceptId);
+    speakSegment();
+  }
+  function nextTrack() { if (state.i + 1 < state.items.length) goToItem(state.i + 1); }
+  function prevTrack() {
+    if (!state.items.length) return;
+    if (state.seg > 0) goToItem(state.i);          // restart current concept
+    else goToItem(Math.max(0, state.i - 1));       // previous concept
+  }
+
   function stop() {
     gen++; try { synth.cancel(); } catch {}
     stopKeepAlive();
@@ -214,7 +231,7 @@ export function createTTS(store) {
 
   return {
     supported,
-    play, togglePlay, pause, resume, next, prev, stop, setRate, setVoice,
+    play, togglePlay, pause, resume, next, prev, nextTrack, prevTrack, stop, setRate, setVoice,
     getState: snapshot,
     getVoices,
     currentVoiceURI: () => { const v = pickVoice(); return v ? v.voiceURI : null; },

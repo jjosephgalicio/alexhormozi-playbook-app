@@ -497,6 +497,27 @@ select.inp { appearance: none; background-image:
 .listen-btn .listen-ico { font-size: 0.72rem; }
 .listen-btn.playall { display: flex; width: 100%; justify-content: center; margin-bottom: 14px; }
 .listen-btn[disabled] { opacity: .5; cursor: default; }
+.listen-btn.playing { background: var(--accent); color: #fff; border-color: var(--accent); }
+[data-theme="dark"] .listen-btn.playing { color: #0c1410; }
+
+/* animated equalizer "now reading" indicator */
+.eq { display: inline-flex; align-items: flex-end; gap: 2px; height: 13px; }
+.eq span { width: 3px; height: 100%; background: currentColor; border-radius: 1px;
+  transform-origin: bottom; transform: scaleY(.4); }
+@media (prefers-reduced-motion: no-preference) {
+  .eq span { animation: eq .9s ease-in-out infinite; }
+  .eq span:nth-child(2) { animation-delay: .15s; }
+  .eq span:nth-child(3) { animation-delay: .3s; }
+}
+@keyframes eq { 0%, 100% { transform: scaleY(.35); } 50% { transform: scaleY(1); } }
+
+/* player track (concept) skip */
+.pl-trackgroup { display: flex; gap: 2px; flex: 0 0 auto; align-items: center; }
+.pl-trackgroup[hidden] { display: none; }
+.pl-track { appearance: none; border: 0; background: none; cursor: pointer; color: var(--ink-2);
+  width: 32px; height: 32px; border-radius: 50%; font-size: 0.95rem; display: grid; place-items: center; }
+.pl-track:hover { background: var(--paper-sunk); color: var(--accent); }
+.pl-track:active { transform: scale(.9); }
 
 /* section currently being read */
 .speaking {

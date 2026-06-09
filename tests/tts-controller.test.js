@@ -108,3 +108,34 @@ test('currentVoiceURI returns a voice', () => {
   reset(); const tts = createTTS(newStore());
   assert.equal(tts.currentVoiceURI(), 'v1');
 });
+
+test('nextTrack jumps to the next concept (seg 0) and fires onAdvance', () => {
+  reset(); const tts = createTTS(newStore());
+  const adv = []; tts.setOnAdvance(id => adv.push(id));
+  tts.play([item('a'), item('b'), item('c')]);
+  tts.next();          // a -> seg 1
+  tts.nextTrack();     // -> b seg 0
+  assert.equal(tts.getState().conceptId, 'b');
+  assert.equal(tts.getState().seg, 0);
+  assert.deepEqual(adv, ['b']);
+});
+
+test('nextTrack at the last concept is a no-op', () => {
+  reset(); const tts = createTTS(newStore());
+  tts.play([item('a'), item('b')]);
+  tts.nextTrack();     // -> b
+  tts.nextTrack();     // already last
+  assert.equal(tts.getState().conceptId, 'b');
+});
+
+test('prevTrack restarts current concept, then steps back', () => {
+  reset(); const tts = createTTS(newStore());
+  tts.play([item('a'), item('b')]);
+  tts.nextTrack();     // b seg 0
+  tts.next();          // b seg 1
+  tts.prevTrack();     // seg>0 -> restart b at seg 0
+  assert.equal(tts.getState().conceptId, 'b');
+  assert.equal(tts.getState().seg, 0);
+  tts.prevTrack();     // seg==0 -> previous concept a
+  assert.equal(tts.getState().conceptId, 'a');
+});

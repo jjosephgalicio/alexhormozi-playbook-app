@@ -11,9 +11,14 @@ export function createPlayer(tts, store) {
   const bar = el('div', { class: 'player-bar-fill' });
 
   const playBtn = el('button', { class: 'pl-btn pl-play', 'aria-label': 'Play or pause' }, '▶');
-  const prevBtn = el('button', { class: 'pl-btn', 'aria-label': 'Previous section', onclick: () => tts.prev() }, '⏮');
-  const nextBtn = el('button', { class: 'pl-btn', 'aria-label': 'Next section', onclick: () => tts.next() }, '⏭');
+  const prevBtn = el('button', { class: 'pl-btn', 'aria-label': 'Previous section', onclick: () => tts.prev() }, '⏪');
+  const nextBtn = el('button', { class: 'pl-btn', 'aria-label': 'Next section', onclick: () => tts.next() }, '⏩');
   playBtn.addEventListener('click', () => tts.togglePlay());
+
+  // track (concept) skip — only shown for playlists ("Listen to all")
+  const trackPrev = el('button', { class: 'pl-track', 'aria-label': 'Previous concept', onclick: () => tts.prevTrack() }, '⏮');
+  const trackNext = el('button', { class: 'pl-track', 'aria-label': 'Next concept', onclick: () => tts.nextTrack() }, '⏭');
+  const trackGroup = el('div', { class: 'pl-trackgroup', hidden: true }, trackPrev, trackNext);
 
   const rateBtn = el('button', { class: 'pl-chip', 'aria-label': 'Playback speed', onclick: () => {
     const cur = store.get().audio.rate || 1;
@@ -28,7 +33,8 @@ export function createPlayer(tts, store) {
 
   const root = el('div', { class: 'player', hidden: true, role: 'region', 'aria-label': 'Audiobook player' },
     el('div', { class: 'player-bar' }, bar),
-    el('div', { class: 'player-row1' }, title, sub),
+    el('div', { class: 'player-row1' }, title, trackGroup),
+    sub,
     el('div', { class: 'player-row2' },
       el('div', { class: 'pl-group' }, prevBtn, playBtn, nextBtn),
       el('div', { class: 'pl-spacer' }),
@@ -48,6 +54,7 @@ export function createPlayer(tts, store) {
     root.hidden = s.count === 0;
     document.body.classList.toggle('player-open', s.count > 0);
     playBtn.textContent = (s.playing && !s.paused) ? '⏸' : '▶';
+    trackGroup.hidden = !s.hasPlaylist;
     title.textContent = s.title || '';
     title.setAttribute('href', s.conceptId ? `#/concept/${s.conceptId}` : '#');
     const parts = [];

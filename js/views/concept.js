@@ -91,13 +91,27 @@ export function renderConcept({ store, tts, param }) {
   const relatedChips = c.related.map(id => byId(id)).filter(Boolean)
     .map(r => el('a', { class: 'chip', href: `#/concept/${r.concept.id}` }, r.concept.title));
 
-  // listen (read-aloud) button
+  // listen (read-aloud) button — morphs into a live "reading aloud" indicator
   const item = { conceptId: c.id, title: c.title, segments: buildConceptScript(c) };
-  const listenBtn = tts && tts.supported
-    ? el('button', { class: 'listen-btn', onclick: () => tts.play([item]) },
-        el('span', { class: 'listen-ico', 'aria-hidden': 'true' }, '▶'),
-        'Listen to this concept')
-    : null;
+  const EQ = '<span class="eq" aria-hidden="true"><span></span><span></span><span></span></span>';
+  let listenIco = null, listenLabel = null, listenBtn = null;
+  const updateListen = (s) => {
+    if (!listenBtn) return;
+    const active = s.count && s.conceptId === c.id;
+    const reading = active && s.playing && !s.paused;
+    listenIco.innerHTML = reading ? EQ : '▶';
+    listenLabel.textContent = !active ? 'Listen to this concept'
+      : (reading ? 'Reading aloud — tap to pause' : 'Paused — tap to resume');
+    listenBtn.classList.toggle('playing', !!reading);
+  };
+  if (tts && tts.supported) {
+    listenIco = el('span', { class: 'listen-ico', 'aria-hidden': 'true', html: '▶' });
+    listenLabel = el('span', {}, 'Listen to this concept');
+    listenBtn = el('button', { class: 'listen-btn', onclick: () => {
+      const s = tts.getState();
+      if (s.count && s.conceptId === c.id) tts.togglePlay(); else tts.play([item]);
+    } }, listenIco, listenLabel);
+  }
 
   // learned / bookmark
   const learnedBtn = el('button', { class: 'btn primary' });
@@ -179,8 +193,10 @@ export function renderConcept({ store, tts, param }) {
         lastSeg = s.seg;
       }
     };
-    activeUnsub = tts.subscribe(applyHighlight);
+    const onState = (s) => { applyHighlight(s); updateListen(s); };
+    activeUnsub = tts.subscribe(onState);
     applyHighlight(tts.getState(), false);  // reflect current state on mount (e.g. navigating in mid-playback)
+    updateListen(tts.getState());
   }
 
   return root;
