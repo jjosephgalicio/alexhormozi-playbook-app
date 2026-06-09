@@ -192,14 +192,15 @@ function timeline(segs) {
   return s;
 }
 
-// N boxes left-to-right joined by arrows (optionally highlight one)
+// N boxes left-to-right joined by arrows (optionally highlight one).
+// Box width adapts to the count so 4-5 boxes still fit the 300-wide canvas.
 function flow(labels, hl = -1) {
-  const n = labels.length, w = 80, gap = (300 - n * w) / (n + 1), y = 46, h = 48;
+  const n = labels.length, gap = 12, w = (300 - (n + 1) * gap) / n, y = 46, h = 48;
   let s = '';
   labels.forEach((l, i) => {
     const x = gap + i * (w + gap);
     s += box(x, y, w, h, l, 'dgbox' + (i === hl ? ' a' : ''));
-    if (i < n - 1) s += arrowR(x + w + 2, y + h / 2, gap - 4, 'stroke a', 'af');
+    if (i < n - 1) s += arrowR(x + w + 1, y + h / 2, gap - 2, 'stroke a', 'af');
   });
   return s;
 }
@@ -297,9 +298,12 @@ export function diagramSpecSVG(spec) {
   if (!spec || !spec.type) return '';
   let inner = '';
   switch (spec.type) {
-    case 'flow':
-      inner = flow((spec.labels || []).map(l => clip(l)), spec.hl ?? -1);
+    case 'flow': {
+      const labs = spec.labels || [];
+      const max = labs.length >= 5 ? 9 : labs.length >= 4 ? 11 : 16;
+      inner = flow(labs.map(l => clip(l, max)), spec.hl ?? -1);
       break;
+    }
     case 'compare':
       inner = compareBoxes(clip(spec.left), clip(spec.leftSub, 16), clip(spec.right), clip(spec.rightSub, 16), spec.hl || 'right');
       break;

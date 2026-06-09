@@ -335,7 +335,8 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 /* mechanic diagrams (theme-aware via classes) */
 .diagram { padding: 14px 14px 10px; background: var(--paper-2); border: 1px solid var(--line);
   border-radius: var(--radius-s); box-shadow: var(--shadow-1); }
-.diagram svg { width: 100%; height: auto; display: block; overflow: visible; }
+.diagram svg { width: 100%; height: auto; display: block; overflow: visible;
+  max-width: 460px; margin-inline: auto; }
 .diagram text { font-family: var(--sans); fill: var(--ink); font-size: 12px; font-weight: 600; }
 .diagram text.s { font-size: 10.5px; fill: var(--muted); }
 .diagram text.sa { font-size: 10.5px; fill: var(--accent); font-weight: 700; }
