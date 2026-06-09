@@ -169,15 +169,18 @@ export function renderConcept({ store, tts, param }) {
   // live highlight of the section being read aloud
   if (tts && tts.supported) {
     let lastSeg = -1;
-    activeUnsub = tts.subscribe((s) => {
+    const applyHighlight = (s, scroll = true) => {
       root.querySelectorAll('[data-seg].speaking').forEach(e => e.classList.remove('speaking'));
       if (!s.playing || s.conceptId !== c.id) { lastSeg = -1; return; }
       const tgt = root.querySelector(`[data-seg="${s.seg}"]`);
       if (tgt) {
         tgt.classList.add('speaking');
-        if (s.seg !== lastSeg) { tgt.scrollIntoView({ block: 'center', behavior: 'smooth' }); lastSeg = s.seg; }
+        if (scroll && s.seg !== lastSeg) { tgt.scrollIntoView({ block: 'center', behavior: 'smooth' }); }
+        lastSeg = s.seg;
       }
-    });
+    };
+    activeUnsub = tts.subscribe(applyHighlight);
+    applyHighlight(tts.getState(), false);  // reflect current state on mount (e.g. navigating in mid-playback)
   }
 
   return root;

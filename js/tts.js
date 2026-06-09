@@ -126,6 +126,7 @@ export function createTTS(store) {
     keepAlive = setInterval(() => {
       if (state.playing && !state.paused) { try { synth.resume(); } catch {} }
     }, 9000);
+    keepAlive.unref?.();  // don't keep a Node process alive (no-op in browsers)
   }
   function stopKeepAlive() { if (keepAlive) { clearInterval(keepAlive); keepAlive = null; } }
 
@@ -133,6 +134,9 @@ export function createTTS(store) {
     if (!supported) return;
     gen++; const myGen = gen;
     try { synth.cancel(); } catch {}
+    // Chrome quirk: after pause(), cancel()+speak() can stay paused and silent.
+    // Clear any lingering paused state before the new utterance (no-op if already playing).
+    try { synth.resume(); } catch {}
 
     let item = state.items[state.i];
     if (!item) { return finishAll(); }
@@ -184,11 +188,13 @@ export function createTTS(store) {
   function next() {
     if (!state.items.length) return;
     state.playing = true; state.paused = false;
+    startKeepAlive();
     state.seg++; speakSegment();
   }
   function prev() {
     if (!state.items.length) return;
     state.playing = true; state.paused = false;
+    startKeepAlive();
     if (state.seg > 0) state.seg--;
     else if (state.i > 0) { state.i--; state.seg = 0; }
     speakSegment();
@@ -201,14 +207,17 @@ export function createTTS(store) {
     emit();
   }
 
-  function setRate(r) { store.setAudio({ rate: r }); if (state.playing) speakSegment(); else emit(); }
-  function setVoice(uri) { store.setAudio({ voiceURI: uri }); if (state.playing) speakSegment(); else emit(); }
+  // re-speak the current segment to apply the change, but only if actively playing
+  // (don't un-pause the user, and don't start audio when idle)
+  function setRate(r) { store.setAudio({ rate: r }); if (state.playing && !state.paused) speakSegment(); else emit(); }
+  function setVoice(uri) { store.setAudio({ voiceURI: uri }); if (state.playing && !state.paused) speakSegment(); else emit(); }
 
   return {
     supported,
     play, togglePlay, pause, resume, next, prev, stop, setRate, setVoice,
     getState: snapshot,
     getVoices,
+    currentVoiceURI: () => { const v = pickVoice(); return v ? v.voiceURI : null; },
     subscribe(fn) { subs.add(fn); return () => subs.delete(fn); },
     onVoices(fn) { voiceSubs.add(fn); fn(getVoices()); return () => voiceSubs.delete(fn); },
     setOnAdvance(fn) { onAdvance = fn; },

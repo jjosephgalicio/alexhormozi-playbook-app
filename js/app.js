@@ -20,8 +20,10 @@ const tts = createTTS(store);
 
 // Persistent player (keeps playing across view changes).
 document.body.append(createPlayer(tts, store));
-// Follow-along: when a playlist advances to a new concept, navigate to it.
+// Follow-along: when a playlist advances, navigate to the new concept — but only if
+// the user is currently reading a concept (don't yank them away from Tools/Saved/etc).
 tts.setOnAdvance((conceptId) => {
+  if (!window.location.hash.startsWith('#/concept/')) return;
   const target = `#/concept/${conceptId}`;
   if (window.location.hash !== target) window.location.hash = target;
 });

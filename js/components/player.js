@@ -6,7 +6,7 @@ import { el } from '../util.js';
 const RATES = [0.8, 1, 1.15, 1.3, 1.5, 1.75];
 
 export function createPlayer(tts, store) {
-  const title = el('div', { class: 'player-title' }, '');
+  const title = el('a', { class: 'player-title', href: '#', title: 'Go to this concept' }, '');
   const sub = el('div', { class: 'player-sub' }, '');
   const bar = el('div', { class: 'player-bar-fill' });
 
@@ -39,7 +39,9 @@ export function createPlayer(tts, store) {
     const want = store.get().audio.voiceURI;
     voiceSel.replaceChildren(
       ...voices.map(v => el('option', { value: v.voiceURI }, `${v.name} (${v.lang})`)));
-    if (want && voices.some(v => v.voiceURI === want)) voiceSel.value = want;
+    // show the stored choice, or the voice the engine auto-picked
+    const showURI = (want && voices.some(v => v.voiceURI === want)) ? want : tts.currentVoiceURI();
+    if (showURI) voiceSel.value = showURI;
   });
 
   tts.subscribe((s) => {
@@ -47,6 +49,7 @@ export function createPlayer(tts, store) {
     document.body.classList.toggle('player-open', s.count > 0);
     playBtn.textContent = (s.playing && !s.paused) ? '⏸' : '▶';
     title.textContent = s.title || '';
+    title.setAttribute('href', s.conceptId ? `#/concept/${s.conceptId}` : '#');
     const parts = [];
     if (s.label) parts.push(s.label);
     if (s.total) parts.push(`${s.seg + 1} / ${s.total}`);
