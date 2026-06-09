@@ -28,6 +28,19 @@ tts.setOnAdvance((conceptId) => {
   if (window.location.hash !== target) window.location.hash = target;
 });
 
+// Live "now playing" badge on any concept list item currently being read aloud.
+function syncNowPlaying(s) {
+  const activeId = (s.playing && !s.paused) ? s.conceptId : null;
+  document.querySelectorAll('.concept-item.now-playing').forEach(e => {
+    if (e.getAttribute('data-concept') !== activeId) e.classList.remove('now-playing');
+  });
+  if (activeId) {
+    const sel = `.concept-item[data-concept="${(window.CSS && CSS.escape) ? CSS.escape(activeId) : activeId}"]`;
+    document.querySelectorAll(sel).forEach(e => e.classList.add('now-playing'));
+  }
+}
+tts.subscribe(syncNowPlaying);
+
 const view = document.getElementById('view');
 const backBtn = document.getElementById('backBtn');
 const themeBtn = document.getElementById('themeBtn');
@@ -71,6 +84,7 @@ function render(route) {
     node.textContent = 'Something went wrong rendering this view.';
   }
   view.replaceChildren(node);
+  syncNowPlaying(tts.getState());  // reflect playback on freshly-rendered list items
   titleEl.textContent = TITLES[route.name] || 'The Playbook';
   backBtn.hidden = route.name === 'home';
   backBtn.onclick = () => history.back();

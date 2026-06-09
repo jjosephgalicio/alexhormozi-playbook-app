@@ -15,8 +15,14 @@ export function renderProgressRing(pct) {
 }
 
 export function renderConceptListItem(concept, moduleId, { learned, bookmarked }) {
-  return el('a', { href: `#/concept/${concept.id}`, class: 'concept-item' },
-    svgHost('ci-thumb', coverSVG(moduleId, concept.id)),
+  const thumb = el('div', { class: 'ci-thumb' });
+  thumb.innerHTML = coverSVG(moduleId, concept.id);
+  // live "now playing" overlay (shown by app.js when this concept is being read aloud)
+  thumb.append(el('span', { class: 'ci-now', 'aria-hidden': 'true',
+    html: '<span class="eq"><span></span><span></span><span></span></span>' }));
+
+  return el('a', { href: `#/concept/${concept.id}`, class: 'concept-item', 'data-concept': concept.id },
+    thumb,
     el('div', { class: 'ci-main' },
       el('div', { class: 'ci-title' }, concept.title),
       el('div', { class: 'ci-hook' }, concept.hook)),
