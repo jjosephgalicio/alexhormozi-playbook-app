@@ -212,7 +212,8 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 .cod-title { font-family: var(--serif); font-size: 1.3rem; line-height: 1.18; margin-bottom: 6px; }
 .cod-hook { color: var(--muted); font-size: 0.95rem; }
 
-.book-card { display: grid; grid-template-columns: 92px 1fr; gap: 0; padding: 0; overflow: hidden; }
+/* .card.book-card (specificity 0,2,0) so the grid beats a.card { display:block } */
+.card.book-card { display: grid; grid-template-columns: 92px 1fr; gap: 0; padding: 0; overflow: hidden; }
 .book-card .thumb { aspect-ratio: auto; height: 100%; border-radius: var(--radius) 0 0 var(--radius); }
 .book-card .thumb::after { border-radius: var(--radius) 0 0 var(--radius); }
 .book-body { padding: 14px 16px; }
@@ -571,5 +572,5 @@ body.player-open .c-actions { bottom: calc(var(--tab-h) + var(--player-h) + env(
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
 @media (min-width: 560px) {
-  .book-card { grid-template-columns: 130px 1fr; }
+  .card.book-card { grid-template-columns: 130px 1fr; }
 }
