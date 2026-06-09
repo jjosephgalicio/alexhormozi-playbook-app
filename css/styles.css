@@ -574,3 +574,25 @@ body.player-open .c-actions { bottom: calc(var(--tab-h) + var(--player-h) + env(
 @media (min-width: 560px) {
   .card.book-card { grid-template-columns: 130px 1fr; }
 }
+
+/* --- Desktop / wide-screen layout ----------------------------------------- */
+@media (min-width: 900px) {
+  .view { max-width: 1080px; padding: 26px 24px 52px; }
+
+  /* reading + form views stay a comfortable centered column */
+  .home, .concept, .tools, .saved { max-width: 760px; margin-inline: auto; }
+
+  /* topic hub: two columns of topic cards */
+  .topics { grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  /* topic (book) view + search results: two-column concept grid, headers span full */
+  .lib-body { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; align-items: start; }
+  .lib-body .mod-head { grid-column: 1 / -1; }
+  .lib-body .concept-item { margin-bottom: 0; }
+
+  /* slimmer banner hero on the topic page */
+  .book-hero .thumb { aspect-ratio: 32 / 9; }
+
+  /* center the fixed audiobook player's content within the wide viewport */
+  .player > * { max-width: 1080px; margin-inline: auto; }
+}
