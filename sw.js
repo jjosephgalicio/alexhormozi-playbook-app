@@ -9,7 +9,7 @@
 // long-lived max-age from a previous deploy. skipWaiting + clients.claim activate a new
 // worker immediately; the page reloads itself on controllerchange (see app.js).
 
-const CACHE = 'hpb-v5';
+const CACHE = 'hpb-v6';
 const TIMEOUT = 3500;
 
 const ASSETS = [
@@ -46,6 +46,7 @@ const ASSETS = [
   './js/components/player.js',
   './js/views/home.js',
   './js/views/library.js',
+  './js/views/book.js',
   './js/views/concept.js',
   './js/views/saved.js',
   './js/views/tools.js',

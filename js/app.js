@@ -10,6 +10,7 @@ import { createPlayer } from './components/player.js';
 import { byId } from './data/lookup.js';
 import { renderHome } from './views/home.js';
 import { renderLibrary } from './views/library.js';
+import { renderBook } from './views/book.js';
 import { renderConcept } from './views/concept.js';
 import { renderTools } from './views/tools.js';
 import { renderSaved } from './views/saved.js';
@@ -46,13 +47,15 @@ themeBtn.addEventListener('click', () => {
 store.setStreak(nextStreak(store.get().streak, dateKey()));
 
 const VIEWS = {
-  home: renderHome, library: renderLibrary, concept: renderConcept,
+  home: renderHome, library: renderLibrary, book: renderBook, concept: renderConcept,
   tools: renderTools, saved: renderSaved,
 };
 const TITLES = {
-  home: 'The Playbook', library: 'Library', concept: 'The Playbook',
+  home: 'The Playbook', library: 'Library', book: 'Library', concept: 'The Playbook',
   tools: 'Tools', saved: 'Saved',
 };
+// which bottom tab is highlighted for a given route
+const TAB_OF = { book: 'library', concept: 'library' };
 
 function render(route) {
   const fn = VIEWS[route.name] || renderHome;
@@ -70,8 +73,9 @@ function render(route) {
   backBtn.hidden = route.name === 'home';
   backBtn.onclick = () => history.back();
 
+  const activeTab = TAB_OF[route.name] || route.name;
   document.querySelectorAll('.tab').forEach(t =>
-    t.classList.toggle('active', t.dataset.tab === route.name));
+    t.classList.toggle('active', t.dataset.tab === activeTab));
 
   view.focus({ preventScroll: true });
   window.scrollTo(0, 0);

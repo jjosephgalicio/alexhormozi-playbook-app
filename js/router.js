@@ -1,6 +1,6 @@
 // Tiny hash router. parseHash is pure (testable); startRouter binds it to the browser.
 
-const KNOWN = new Set(['home', 'library', 'tools', 'saved', 'concept']);
+const KNOWN = new Set(['home', 'library', 'tools', 'saved', 'concept', 'book']);
 
 export function parseHash(hash) {
   const path = (hash || '').replace(/^#\/?/, '');

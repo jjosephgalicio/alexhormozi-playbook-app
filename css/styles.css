@@ -229,6 +229,13 @@ button:focus-visible { outline: none; box-shadow: var(--ring); border-color: var
 }
 .search::placeholder { color: var(--muted); }
 
+/* topic hub */
+.topics { display: grid; gap: 12px; }
+.crumb-link { display: inline-block; color: var(--muted); font-size: 0.82rem; font-weight: 600;
+  margin-bottom: 12px; }
+.crumb-link:hover { color: var(--accent); }
+.book-hero { padding: 0; overflow: hidden; margin-bottom: 14px; }
+
 .mod-head { margin: 24px 0 10px; }
 .mod-book { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--gold); }

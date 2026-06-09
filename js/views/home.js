@@ -59,7 +59,7 @@ export function renderHome({ store }) {
   // The books
   home.append(el('div', { class: 'section-label' }, 'The books'));
   for (const b of BOOKS) {
-    home.append(el('a', { href: '#/library', class: 'card book-card' },
+    home.append(el('a', { href: `#/book/${b.id}`, class: 'card book-card' },
       svgHost('thumb', coverSVG(b.modules[0].id, b.id)),
       el('div', { class: 'book-body' },
         el('div', { class: 'book-kicker' }, `${b.modules.length} modules`),
