@@ -28,6 +28,14 @@ export const MODULE_THEMES = {
   'ldx-ads1':       { c1: '#3A6B2E', c2: '#9BBC74', motif: 'bars',  label: 'Paid Ads I' },
   'ldx-ads2':       { c1: '#6B6326', c2: '#C6BC72', motif: 'bars',  label: 'Paid Ads II' },
   'ldx-employees':  { c1: '#7A4A2A', c2: '#CC9E74', motif: 'loop',  label: 'Employees' },
+  // The Sales Skill
+  'sl-why':        { c1: '#1C5E5A', c2: '#7CC0BB', motif: 'rings', label: 'Why Sales' },
+  'sl-core':       { c1: '#7A3E1C', c2: '#E0A368', motif: 'stack', label: 'Core Skills' },
+  'sl-process':    { c1: '#2A4A78', c2: '#86A4D4', motif: 'rise',  label: 'The Process' },
+  'sl-objections': { c1: '#8A2E3C', c2: '#D68A94', motif: 'burst', label: 'Objections' },
+  'sl-mindset':    { c1: '#4A356E', c2: '#A48FC6', motif: 'loop',  label: 'Mindset' },
+  'sl-career':     { c1: '#2E5A30', c2: '#8CBC7E', motif: 'arcs',  label: 'Career' },
+  'sl-money':      { c1: '#6E5A1C', c2: '#CEB964', motif: 'bars',  label: 'Money' },
 };
 
 const FALLBACK = { c1: '#3A4A57', c2: '#9FB0BC', motif: 'arcs', label: '' };

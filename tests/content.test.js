@@ -5,9 +5,9 @@ import { BOOKS } from '../js/data/content.js';
 const concepts = BOOKS.flatMap(b => b.modules.flatMap(m => m.concepts));
 const ids = concepts.map(c => c.id);
 
-test('four books with stable ids', () => {
-  assert.equal(BOOKS.length, 4);
-  assert.deepEqual(BOOKS.map(b => b.id), ['offers', 'money-models', 'leads', 'leads-deep']);
+test('five books with stable ids', () => {
+  assert.equal(BOOKS.length, 5);
+  assert.deepEqual(BOOKS.map(b => b.id), ['offers', 'money-models', 'leads', 'leads-deep', 'sales']);
 });
 
 test('every book and module has title + summary/tagline', () => {
