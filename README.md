@@ -1,12 +1,12 @@
 # The Playbook — Hormozi *Offers* & *Money Models* (PWA)
 
 A mobile-first, **fully-offline** Progressive Web App that turns Alex Hormozi's
-*$100M Offers*, *$100M Money Models*, and *$100M Leads* — plus a *The Sales Skill*
-book distilled from the Jay Shetty × Shelby interview on selling as a life skill —
-into an action-first learning playbook, built so an entrepreneur can digest the ideas
-and actually implement them day to day.
+*$100M Offers*, *$100M Money Models*, and *$100M Leads* — plus two Shelby sales books
+(*The Sales Skill*, from the Jay Shetty × Shelby interview, and *How to Sell Anything*,
+her full sales course) — into an action-first learning playbook, built so an
+entrepreneur can digest the ideas and actually implement them day to day.
 
-- **Reference library** of 120+ action-first concept cards across five topics, each with: principle → why →
+- **Reference library** of 150+ action-first concept cards across six topics, each with: principle → why →
   coach's note → story → applied example → **more real-world examples** → **case studies**
   → **common mistakes** → **by-the-numbers** (researched, attributed) → action checklist
 - 🔊 **Offline audiobook read-aloud** — a built-in player (Web Speech API) with voice

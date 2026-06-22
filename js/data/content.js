@@ -17,6 +17,7 @@
 import { LEADS_BOOK } from './leads.js';
 import { LEADS_DEEP_BOOK } from './leads-deep.js';
 import { SALES_BOOK } from './sales.js';
+import { SELL_ANYTHING_BOOK } from './sell-anything.js';
 
 export const BOOKS = [
   {
@@ -1309,4 +1310,5 @@ export const BOOKS = [
   LEADS_BOOK,
   LEADS_DEEP_BOOK,
   SALES_BOOK,
+  SELL_ANYTHING_BOOK,
 ];

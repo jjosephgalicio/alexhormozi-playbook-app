@@ -36,6 +36,15 @@ export const MODULE_THEMES = {
   'sl-mindset':    { c1: '#4A356E', c2: '#A48FC6', motif: 'loop',  label: 'Mindset' },
   'sl-career':     { c1: '#2E5A30', c2: '#8CBC7E', motif: 'arcs',  label: 'Career' },
   'sl-money':      { c1: '#6E5A1C', c2: '#CEB964', motif: 'bars',  label: 'Money' },
+  // How to Sell Anything
+  'sa-what':       { c1: '#1E4E6E', c2: '#84B4CE', motif: 'rings', label: 'What Sales Is' },
+  'sa-psychology': { c1: '#5A2C66', c2: '#B292C4', motif: 'burst', label: 'Psychology' },
+  'sa-mindset':    { c1: '#8A4A1E', c2: '#E0A66A', motif: 'rise',  label: 'Mindset' },
+  'sa-discovery':  { c1: '#1C6056', c2: '#7CBEB2', motif: 'rings', label: 'Discovery' },
+  'sa-the-sale':   { c1: '#34407E', c2: '#8C98D6', motif: 'stack', label: 'The Sale' },
+  'sa-objections': { c1: '#8E2E38', c2: '#D68A92', motif: 'burst', label: 'Objections' },
+  'sa-after':      { c1: '#2C5A30', c2: '#8CBC7E', motif: 'loop',  label: 'After the Yes' },
+  'sa-business':   { c1: '#6E5820', c2: '#CEB868', motif: 'bars',  label: 'The Career' },
 };
 
 const FALLBACK = { c1: '#3A4A57', c2: '#9FB0BC', motif: 'arcs', label: '' };

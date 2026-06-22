@@ -9,7 +9,7 @@
 // long-lived max-age from a previous deploy. skipWaiting + clients.claim activate a new
 // worker immediately; the page reloads itself on controllerchange (see app.js).
 
-const CACHE = 'hpb-v13';
+const CACHE = 'hpb-v14';
 const TIMEOUT = 3500;
 
 const ASSETS = [
@@ -46,6 +46,15 @@ const ASSETS = [
   './js/data/sales/sl-mindset.js',
   './js/data/sales/sl-career.js',
   './js/data/sales/sl-money.js',
+  './js/data/sell-anything.js',
+  './js/data/sell-anything/sa-what.js',
+  './js/data/sell-anything/sa-psychology.js',
+  './js/data/sell-anything/sa-mindset.js',
+  './js/data/sell-anything/sa-discovery.js',
+  './js/data/sell-anything/sa-the-sale.js',
+  './js/data/sell-anything/sa-objections.js',
+  './js/data/sell-anything/sa-after.js',
+  './js/data/sell-anything/sa-business.js',
   './js/data/lookup.js',
   './js/components/card.js',
   './js/components/cover.js',
